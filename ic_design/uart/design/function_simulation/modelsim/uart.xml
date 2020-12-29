@@ -1,0 +1,16 @@
+<interfaceDefinition version='1.1' language='verilog' kind='module' name='uart'>
+    <portList>
+
+      <port name='clk' direction='input' type='' />
+      <port name='divisor' direction='input' type='' />
+      <port name='rst_n' direction='input' type='' />
+      <port name='para_data_in' direction='input' type='[7:0]' />
+      <port name='serial_out' direction='output' type='' />
+      <port name='tx_en' direction='input' type='' />
+      <port name='tx_flag' direction='output' type='' />
+      <port name='serial_in' direction='input' type='' />
+      <port name='para_data_out' direction='output' type='[7:0]' />
+      <port name='rx_flag' direction='output' type='' />
+
+    </portList>
+</interfaceDefinition>

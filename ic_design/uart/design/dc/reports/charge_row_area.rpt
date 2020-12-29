@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : dll_syn
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 11:09:40 2008
+****************************************
+
+Library(s) Used:
+
+    tcb773pbc (File: /export/home/forest/xs/lib/tcb773pbc.db)
+
+Number of ports:               12
+Number of nets:               112
+Number of cells:               99
+Number of references:          23
+
+Combinational area:       6335.000000
+Noncombinational area:    4112.500000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          10447.500000
+Total area:                 undefined
+1

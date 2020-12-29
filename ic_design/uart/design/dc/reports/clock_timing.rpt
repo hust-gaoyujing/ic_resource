@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : baud_rate
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 06:07:49 2008
+****************************************
+
+Operating Conditions: BCCOM   Library: tcb773pbc
+Wire Load Model Mode: top
+
+  Startpoint: DIVISOR[1] (input port clocked by clock)
+  Endpoint: counter_reg[4]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  baud_rate          TSMC16K_Conservative  tcb773pbc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                   20.00      20.00 r
+  DIVISOR[1] (in)                                         0.00      20.00 r
+  lt_41/B[1] (baud_rate_DW01_cmp2_16_0)                   0.00      20.00 r
+  lt_41/U29/ZN (INV0)                                     0.13      20.13 f
+  lt_41/U17/ZN (AOI22D0)                                  0.16      20.29 r
+  lt_41/U14/ZN (AOI222D0)                                 0.18      20.47 f
+  lt_41/U9/ZN (OAI211D0)                                  0.23      20.69 r
+  lt_41/U6/ZN (AOI222D0)                                  0.17      20.86 f
+  lt_41/U13/ZN (OAI21D0)                                  0.23      21.09 r
+  lt_41/U10/ZN (AOI222D0)                                 0.16      21.25 f
+  lt_41/U26/ZN (OAI21D0)                                  0.23      21.48 r
+  lt_41/U23/ZN (AOI21D0)                                  0.13      21.61 f
+  lt_41/U27/ZN (OAI21D0)                                  0.62      22.22 r
+  lt_41/LT_LE (baud_rate_DW01_cmp2_16_0)                  0.00      22.22 r
+  U22/Z (BUF1)                                            0.31      22.53 r
+  U3/Z (AN2D1)                                            0.16      22.69 r
+  counter_reg[4]/D (DFCN1Q)                               0.00      22.69 r
+  data arrival time                                                 22.69
+
+  clock clock (rise edge)                                50.00      50.00
+  clock network delay (ideal)                             0.00      50.00
+  clock uncertainty                                      -2.00      48.00
+  counter_reg[4]/CP (DFCN1Q)                              0.00      48.00 r
+  library setup time                                     -0.09      47.91
+  data required time                                                47.91
+  --------------------------------------------------------------------------
+  data required time                                                47.91
+  data arrival time                                                -22.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                       25.23
+
+
+1

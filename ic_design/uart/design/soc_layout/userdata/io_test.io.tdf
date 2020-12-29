@@ -1,0 +1,60 @@
+tdfPurgePadConstr
+pad "VSS2LEFT" "left" 0 390.100
+pad "VSS1LEFT" "left" 0 499.200
+pad "VDD1LEFT" "left" 0 608.300
+pad "para_data_in[6]" "left" 0 717.400 reflect
+pad "para_data_in[7]" "left" 0 742.500 reflect
+pad "rst_n" "left" 0 767.600 reflect
+pad "divisor[0]" "left" 0 792.700 reflect
+pad "divisor[1]" "left" 0 817.800 reflect
+pad "divisor[2]" "left" 0 842.900 reflect
+pad "divisor[3]" "left" 0 868.000 reflect
+pad "divisor[4]" "left" 0 893.100 reflect
+pad "divisor[5]" "left" 0 918.200 reflect
+pad "divisor[6]" "left" 0 943.300 reflect
+pad "VDD2LEFT" "left" 0 968.400
+pad "CORNERLH" "left" 0 1077.500
+pad "CORNERRL" "right" 0 0.000
+pad "VDD2RIGHT" "right" 0 390.100
+pad "VDD1RIGHT" "right" 0 499.200
+pad "VSS1RIGHT" "right" 0 608.300
+pad "clk_tx" "right" 0 717.400 reflect
+pad "rx_flag" "right" 0 742.500 reflect
+pad "para_data_out[0]" "right" 0 767.600 reflect
+pad "para_data_out[1]" "right" 0 792.700 reflect
+pad "para_data_out[2]" "right" 0 817.800 reflect
+pad "para_data_out[3]" "right" 0 842.900 reflect
+pad "para_data_out[4]" "right" 0 868.000 reflect
+pad "para_data_out[5]" "right" 0 893.100 reflect
+pad "para_data_out[6]" "right" 0 918.200 reflect
+pad "para_data_out[7]" "right" 0 943.300 reflect
+pad "VSS2RIGHT" "right" 0 968.400
+pad "VSS2TOP" "top" 0 394.545
+pad "VSS1TOP" "top" 0 508.090
+pad "VDD1TOP" "top" 0 621.635
+pad "divisor[7]" "top" 0 735.180 reflect
+pad "divisor[8]" "top" 0 764.725 reflect
+pad "divisor[9]" "top" 0 794.270 reflect
+pad "divisor[10]" "top" 0 823.815 reflect
+pad "divisor[11]" "top" 0 853.355 reflect
+pad "divisor[12]" "top" 0 882.900 reflect
+pad "divisor[13]" "top" 0 912.445 reflect
+pad "divisor[14]" "top" 0 941.990 reflect
+pad "divisor[15]" "top" 0 971.535 reflect
+pad "VDD2TOP" "top" 0 1001.080
+pad "CORNERRH" "top" 0 1114.625
+pad "CORNERLL" "bottom" 0 0.000
+pad "VDD2BOTTOM" "bottom" 0 392.575
+pad "VDD1BOTTOM" "bottom" 0 504.150
+pad "VSS1BOTTOM" "bottom" 0 615.725
+pad "serial_in" "bottom" 0 727.300
+pad "tx_flag" "bottom" 0 754.875
+pad "tx_en" "bottom" 0 782.450
+pad "serial_out" "bottom" 0 810.025
+pad "para_data_in[0]" "bottom" 0 837.600
+pad "para_data_in[1]" "bottom" 0 865.175
+pad "para_data_in[2]" "bottom" 0 892.750
+pad "para_data_in[3]" "bottom" 0 920.325
+pad "para_data_in[4]" "bottom" 0 947.900
+pad "para_data_in[5]" "bottom" 0 975.475
+pad "VSS2BOTTOM" "bottom" 0 1003.050

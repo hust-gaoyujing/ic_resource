@@ -1,0 +1,8 @@
+################################################
+#                                              #
+# Silicon Perspective, A Cadence Company       #
+# FirstEncounter Design Restore script         #
+#    for design session: /home/xs/uart_35/userdata/uartfinal.enc                     
+#                                              #
+################################################
+restoreDesign /home/xs/uart_35/userdata/uartfinal.enc.dat uart

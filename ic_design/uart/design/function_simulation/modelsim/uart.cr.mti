@@ -1,0 +1,57 @@
+txblock_tb.v {1 {vlog -work work txblock_tb.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module txblock_tb
+
+Top level modules:
+	txblock_tb
+
+} {} {}} F:/ic_project/function_simulation/modelsim/txblock.v {1 {vlog -work work F:/ic_project/function_simulation/modelsim/txblock.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module txblock
+
+Top level modules:
+	txblock
+
+} {} {}} uart_tb.v {1 {vlog -work work uart_tb.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module uart_tb
+
+Top level modules:
+	uart_tb
+
+} {} {}} rxblock_tb.v {1 {vlog -work work rxblock_tb.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module rxblock_tb
+
+Top level modules:
+	rxblock_tb
+
+} {} {}} baud_rate_generator_tb.v {1 {vlog -work work baud_rate_generator_tb.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module baud_rate_generator_tb
+
+Top level modules:
+	baud_rate_generator_tb
+
+} {} {}} F:/ic_project/function_simulation/modelsim/uart.v {1 {vlog -work work F:/ic_project/function_simulation/modelsim/uart.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module uart
+
+Top level modules:
+	uart
+
+} {} {}} F:/ic_project/function_simulation/modelsim/Baud_rate_generator.v {1 {vlog -work work F:/ic_project/function_simulation/modelsim/Baud_rate_generator.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module baud_rate_generator
+
+Top level modules:
+	baud_rate_generator
+
+} {} {}} F:/ic_project/function_simulation/modelsim/rxblock.v {1 {vlog -work work F:/ic_project/function_simulation/modelsim/rxblock.v
+Model Technology ModelSim SE vlog 6.0d Compiler 2005.04 Apr 25 2005
+-- Compiling module rxblock
+
+Top level modules:
+	rxblock
+
+} {} {}}

@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : baud_rate
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 06:07:49 2008
+****************************************
+
+Library(s) Used:
+
+    tcb773pbc (File: /export/home/forest/xs/lib/tcb773pbc.db)
+
+Number of ports:               19
+Number of nets:                90
+Number of cells:               56
+Number of references:           7
+
+Combinational area:       10255.000000
+Noncombinational area:    10657.500000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          20912.500000
+Total area:                 undefined
+1

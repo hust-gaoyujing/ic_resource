@@ -1,0 +1,57 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "uart")
+(DATE "Fri Dec  5 06:14:40 2008")
+(VENDOR "tcb773pbc")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "V-2004.06-SP2")
+(DIVIDER /)
+(VOLTAGE 3.60:3.60:3.60)
+(PROCESS "BCCOM")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "uart")
+  (INSTANCE)
+  (TIMINGCHECK
+    (PATHCONSTRAINT divisor[1] u1/lt_41/U29/I u1/lt_41/U29/ZN u1/lt_41/U17/B2 u1/lt_41/U17/ZN u1/lt_41/U14/A1 u1/lt_41/U14/ZN u1/lt_41/U9/A1 u1/lt_41/U9/ZN u1/lt_41/U6/A2 u1/lt_41/U6/ZN u1/lt_41/U13/A1 u1/lt_41/U13/ZN u1/lt_41/U10/A2 u1/lt_41/U10/ZN u1/lt_41/U26/A1 u1/lt_41/U26/ZN u1/lt_41/U23/A2 u1/lt_41/U23/ZN u1/lt_41/U27/A2 u1/lt_41/U27/ZN u1/U22/I u1/U22/Z u1/U3/A1 u1/U3/Z u1/counter_reg\[4\]/D (57.912:57.912:57.912) )
+
+$DESIGN_HIERARCHY uart 40442.50 U20 U10 u3 u2 u1
+$DESIGN_HIERARCHY u1 20912.50 lt_41 add_42 lte_54 divisor_copy_reg[14]
+@ divisor_copy_reg[15] divisor_copy_reg[13] divisor_copy_reg[12]
+@ divisor_copy_reg[1] divisor_copy_reg[2] divisor_copy_reg[3] divisor_copy_reg[7]
+@ divisor_copy_reg[11] divisor_copy_reg[6] divisor_copy_reg[10]
+@ divisor_copy_reg[4] divisor_copy_reg[5] divisor_copy_reg[8] divisor_copy_reg[9]
+@ counter_reg[11] counter_reg[15] counter_reg[12] counter_reg[14] counter_reg[10]
+@ counter_reg[13] counter_reg[7] counter_reg[8] counter_reg[6] counter_reg[9]
+@ counter_reg[5] counter_reg[3] counter_reg[4] counter_reg[0] counter_reg[2]
+@ counter_reg[1] U26 U25 U24 U23 U22 U21 U20 U19 U18 U17 U16 U15 U14 U13 U12 U11
+@ U10 U9 U8 U4 U3 out_clk_reg
+$DESIGN_HIERARCHY u1/lte_54  2590.00 U48 U47 U46 U45 U44 U43 U42 U41 U40 U39
+@ U38 U37 U36 U35 U34 U33 U32 U31 U30 U29 U28 U27 U26 U25 U24 U23 U22 U21 U20 U19
+@ U18 U17 U16 U15 U14 U13 U12 U11 U10 U9 U8 U7 U6
+$DESIGN_HIERARCHY u1/add_42  3587.50 U6 U1_1_14 U1_1_1 U1_1_13 U1_1_12
+@ U1_1_11 U1_1_10 U1_1_9 U1_1_8 U1_1_7 U1_1_6 U1_1_5 U1_1_4 U1_1_3 U1_1_2 U5
+$DESIGN_HIERARCHY u1/lt_41  2695.00 U50 U49 U48 U47 U46 U45 U44 U43 U42 U41
+@ U40 U39 U38 U37 U36 U35 U34 U33 U32 U31 U30 U29 U28 U27 U26 U25 U24 U23 U22 U21
+@ U20 U19 U18 U17 U16 U15 U14 U13 U12 U11 U10 U9 U8 U7 U6
+$DESIGN_HIERARCHY u2  6702.50 U59 U58 U57 para_data_copy_reg[9]
+@ tx_end_flag_reg tx_counter_reg[1] tx_counter_reg[2] tx_counter_reg[0]
+@ tx_counter_reg[3] te_flag_reg clk_counter_reg[2] clk_counter_reg[1]
+@ clk_counter_reg[0] U56 U55 U54 U53 U52 U51 U50 U49 U48 U47 U46 U45 U44 U43 U42
+@ U41 U40 U39 U38 U37 U36 U35 para_data_copy1_reg[8] U34 U33 U32 U31 U30
+@ clk_counter_reg[3] rst_flag_reg U23 U18
+$DESIGN_HIERARCHY u3 12722.50 U86 add_59 output_regs_reg[8]
+@ output_regs_reg[7] output_regs_reg[6] output_regs_reg[5] output_regs_reg[4]
+@ output_regs_reg[3] output_regs_reg[2] output_regs_reg[1]
+@ clk_sample_counter_reg[2] clk_sample_counter_reg[1] clk_sample_counter_reg[3]
+@ clk_sample_counter_reg[6] clk_sample_counter_reg[7] clk_sample_counter_reg[0]
+@ clk_sample_counter_reg[4] clk_sample_counter_reg[5] U85 U84 U83 U82 U81 U80 U79
+@ U78 U77 U76 U75 U74 U73 U72 U71 U70 U69 U68 U67 U66 U65 re_flag_reg U64 U63 U62
+@ U61 U60 U59 U58 U57 U56 U55 U54 U53 U52 U51 U50 U49 U48 U47 U46 U45 U44 U43 U42
+@ U41 U40 U28 U24 U22 U21 U20 U19 U18 U15
+$DESIGN_HIERARCHY u3/add_59  1627.50 U6 U5 U1_1_6 U1_1_1 U1_1_5 U1_1_4 U1_1_3
+@ U1_1_2
+  )
+)
+)

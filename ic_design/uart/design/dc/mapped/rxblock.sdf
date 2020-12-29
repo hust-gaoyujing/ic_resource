@@ -1,0 +1,32 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "rxblock")
+(DATE "Fri Dec  5 06:08:14 2008")
+(VENDOR "tcb773pbc")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "V-2004.06-SP2")
+(DIVIDER /)
+(VOLTAGE 3.60:3.60:3.60)
+(PROCESS "BCCOM")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "rxblock")
+  (INSTANCE)
+  (TIMINGCHECK
+    (PATHCONSTRAINT clk_sample_counter_reg\[5\]/CP clk_sample_counter_reg\[5\]/Q U69/I U69/ZN U66/A2 U66/Z U45/A4 U45/Z U47/I U47/ZN U65/B1 U65/ZN para_data_out[0] (49958.000:49958.000:49958.000) )
+
+$DESIGN_HIERARCHY rxblock 12670.00 add_59 output_regs_reg[8]
+@ output_regs_reg[7] output_regs_reg[6] output_regs_reg[5] output_regs_reg[4]
+@ output_regs_reg[3] output_regs_reg[2] output_regs_reg[1]
+@ clk_sample_counter_reg[2] clk_sample_counter_reg[1] clk_sample_counter_reg[3]
+@ clk_sample_counter_reg[6] clk_sample_counter_reg[7] clk_sample_counter_reg[0]
+@ clk_sample_counter_reg[4] clk_sample_counter_reg[5] U85 U84 U83 U82 U81 U80 U79
+@ U78 U77 U76 U75 U74 U73 U72 U71 U70 U69 U68 U67 U66 U65 re_flag_reg U64 U63 U62
+@ U61 U60 U59 U58 U57 U56 U55 U54 U53 U52 U51 U50 U49 U48 U47 U46 U45 U44 U43 U42
+@ U41 U40 U28 U24 U22 U21 U20 U19 U18 U15
+$DESIGN_HIERARCHY add_59  1627.50 U6 U5 U1_1_6 U1_1_1 U1_1_5 U1_1_4 U1_1_3
+@ U1_1_2
+  )
+)
+)

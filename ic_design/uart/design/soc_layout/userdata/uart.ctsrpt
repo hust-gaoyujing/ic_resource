@@ -1,0 +1,214 @@
+###############################################################
+# Complete Clock Tree Timing Report
+#
+# CLOCK: clk
+#
+# Mode: preRoute
+#
+# Library Name        : tcb773plt
+# Operating Condition : LTCOM
+# Process             : 1
+# Voltage             : 3.6
+# Temperature         : -40
+#
+###############################################################
+
+
+Nr. of Subtrees                : 1
+Nr. of Sinks                   : 32
+Nr. of Buffer                  : 2
+Nr. of Level (including gates) : 2
+Max trig. edge delay at sink(R): u1/divisor_copy_reg[14]/CP 350.9(ps)
+Min trig. edge delay at sink(R): u1/counter_reg[3]/CP 345.2(ps)
+
+
+                                 (Actual)               (Required)          
+Rise Phase Delay               : 345.2~350.9(ps)        0~100000(ps)        
+Fall Phase Delay               : 361.8~367.5(ps)        0~100000(ps)        
+Trig. Edge Skew                : 5.7(ps)                2000(ps)            
+Rise Skew                      : 5.7(ps)                
+Fall Skew                      : 5.7(ps)                
+Max. Rise Buffer Tran          : 50.4(ps)               2000(ps)            
+Max. Fall Buffer Tran          : 53.5(ps)               2000(ps)            
+Max. Rise Sink Tran            : 180.8(ps)              2000(ps)            
+Max. Fall Sink Tran            : 163.3(ps)              2000(ps)            
+Min. Rise Buffer Tran          : 6(ps)                  0(ps)               
+Min. Fall Buffer Tran          : 6(ps)                  0(ps)               
+Min. Rise Sink Tran            : 180.7(ps)              0(ps)               
+Min. Fall Sink Tran            : 163.2(ps)              0(ps)               
+
+
+
+***** NO Max Transition Time Violation *****
+
+***** NO Min Transition Time Violation *****
+
+***** NO Max Capacitance Violation *****
+
+***** NO Max_Fanout Violation *****
+
+clk delay[0 0] (  clk__L1_I0/I )
+********** Skew Distribution **********
+LEVEL 1 Buffer:
+-------------------------------------------------------
+Input Delay Range			Nr of Buffers
+-------------------------------------------------------
+[0.1 0.1]			1
+(max, min, avg, skew) = (0.1(ps) 0.1(ps) 0.1(ps) 0(ps))
+
+-------------------------------------------------------
+Output Delay Range			Nr of Buffers
+-------------------------------------------------------
+[125.8 125.8]			1
+(max, min, avg, skew) = (125.8(ps) 125.8(ps) 125.8(ps) 0(ps))
+
+
+
+LEVEL 2 Buffer:
+-------------------------------------------------------
+Input Delay Range			Nr of Buffers
+-------------------------------------------------------
+[126.3 126.3]			1
+(max, min, avg, skew) = (126.3(ps) 126.3(ps) 126.3(ps) 0(ps))
+
+-------------------------------------------------------
+Output Delay Range			Nr of Buffers
+-------------------------------------------------------
+[343 343]			1
+(max, min, avg, skew) = (343(ps) 343(ps) 343(ps) 0(ps))
+
+
+
+LEVEL 3 Buffer:
+-------------------------------------------------------
+Input Delay Range			Nr of Buffers
+-------------------------------------------------------
+[345.2 345.77]			1
+[345.77 346.34]			0
+[346.34 346.91]			3
+[346.91 347.48]			4
+[347.48 348.05]			7
+[348.05 348.62]			1
+[348.62 349.19]			1
+[349.19 349.76]			2
+[349.76 350.33]			5
+[350.33 350.9]			8
+(max, min, avg, skew) = (350.9(ps) 345.2(ps) 348.469(ps) 5.7(ps))
+
+
+
+
+TOP LEVEL:
+clk (0 0)
+
+
+LEVEL 1:
+cellName = BUF6
+clk__L1_I0/I (0.0001 0.0001)
+clk__L1_I0/Z (0.1258 0.1302) load=0.0398011(pf)
+
+
+LEVEL 2:
+cellName = BUF6
+clk__L2_I0/I (0.1263 0.1307)
+clk__L2_I0/Z (0.343 0.3596) load=0.562007(pf)
+
+
+LEVEL 3:
+cellName = DFCN1Q
+u1/divisor_copy_reg[15]/CP (0.3506 0.3672)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[12]/CP (0.3505 0.3671)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[11]/CP (0.3504 0.367)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[8]/CP (0.3503 0.3669)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[7]/CP (0.3501 0.3667)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[5]/CP (0.3498 0.3664)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[13]/CP (0.3508 0.3674)
+
+cellName = DFCN1Q
+u1/counter_reg[1]/CP (0.3496 0.3662)
+
+cellName = DFCN2Q
+u1/out_clk_reg/CP (0.3495 0.3661)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[10]/CP (0.3506 0.3672)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[2]/CP (0.3495 0.3661)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[3]/CP (0.3492 0.3658)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[4]/CP (0.3493 0.3659)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[1]/CP (0.3488 0.3654)
+
+cellName = DFCN1Q
+u1/counter_reg[0]/CP (0.3496 0.3662)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[6]/CP (0.3478 0.3644)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[14]/CP (0.3509 0.3675)
+
+cellName = DFCN1Q
+u1/divisor_copy_reg[9]/CP (0.3466 0.3632)
+
+cellName = DFCN1Q
+u1/counter_reg[14]/CP (0.3476 0.3642)
+
+cellName = DFCN1Q
+u1/counter_reg[15]/CP (0.3476 0.3642)
+
+cellName = DFCN1Q
+u1/counter_reg[3]/CP (0.3452 0.3618)
+
+cellName = DFCN1Q
+u1/counter_reg[10]/CP (0.3474 0.364)
+
+cellName = DFCN1Q
+u1/counter_reg[13]/CP (0.3474 0.364)
+
+cellName = DFCN1Q
+u1/counter_reg[4]/CP (0.3471 0.3637)
+
+cellName = DFCN1Q
+u1/counter_reg[8]/CP (0.3467 0.3633)
+
+cellName = DFCN1Q
+u1/counter_reg[11]/CP (0.3472 0.3638)
+
+cellName = DFCN1Q
+u1/counter_reg[2]/CP (0.3465 0.3631)
+
+cellName = DFCN1Q
+u1/counter_reg[6]/CP (0.3465 0.3631)
+
+cellName = DFCN1Q
+u1/counter_reg[12]/CP (0.3472 0.3638)
+
+cellName = DFCN1Q
+u1/counter_reg[7]/CP (0.3467 0.3633)
+
+cellName = DFCN1Q
+u1/counter_reg[5]/CP (0.3467 0.3633)
+
+cellName = DFCN1Q
+u1/counter_reg[9]/CP (0.3473 0.3639)
+
+

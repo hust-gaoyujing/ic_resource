@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : uart
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 06:13:42 2008
+****************************************
+
+Library(s) Used:
+
+    tcb773pbc (File: /export/home/forest/xs/lib/tcb773pbc.db)
+
+Number of ports:               40
+Number of nets:                43
+Number of cells:                5
+Number of references:           4
+
+Combinational area:       17832.500000
+Noncombinational area:    22610.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          40442.500000
+Total area:                 undefined
+1

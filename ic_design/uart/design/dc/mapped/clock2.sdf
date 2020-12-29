@@ -1,0 +1,39 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "baud_rate")
+(DATE "Fri Dec  5 06:07:49 2008")
+(VENDOR "tcb773pbc")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "V-2004.06-SP2")
+(DIVIDER /)
+(VOLTAGE 3.60:3.60:3.60)
+(PROCESS "BCCOM")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "baud_rate")
+  (INSTANCE)
+  (TIMINGCHECK
+    (PATHCONSTRAINT DIVISOR[1] lt_41/U29/I lt_41/U29/ZN lt_41/U17/B2 lt_41/U17/ZN lt_41/U14/A1 lt_41/U14/ZN lt_41/U9/A1 lt_41/U9/ZN lt_41/U6/A2 lt_41/U6/ZN lt_41/U13/A1 lt_41/U13/ZN lt_41/U10/A2 lt_41/U10/ZN lt_41/U26/A1 lt_41/U26/ZN lt_41/U23/A2 lt_41/U23/ZN lt_41/U27/A2 lt_41/U27/ZN U22/I U22/Z U3/A1 U3/Z counter_reg\[4\]/D (27.912:27.912:27.912) )
+
+$DESIGN_HIERARCHY baud_rate 20912.50 lt_41 add_42 lte_54 divisor_copy_reg[14]
+@ divisor_copy_reg[15] divisor_copy_reg[13] divisor_copy_reg[12]
+@ divisor_copy_reg[1] divisor_copy_reg[2] divisor_copy_reg[3] divisor_copy_reg[7]
+@ divisor_copy_reg[11] divisor_copy_reg[6] divisor_copy_reg[10]
+@ divisor_copy_reg[4] divisor_copy_reg[5] divisor_copy_reg[8] divisor_copy_reg[9]
+@ counter_reg[11] counter_reg[15] counter_reg[12] counter_reg[14] counter_reg[10]
+@ counter_reg[13] counter_reg[7] counter_reg[8] counter_reg[6] counter_reg[9]
+@ counter_reg[5] counter_reg[3] counter_reg[4] counter_reg[0] counter_reg[2]
+@ counter_reg[1] U26 U25 U24 U23 U22 U21 U20 U19 U18 U17 U16 U15 U14 U13 U12 U11
+@ U10 U9 U8 U4 U3 out_clk_reg
+$DESIGN_HIERARCHY lte_54  2590.00 U48 U47 U46 U45 U44 U43 U42 U41 U40 U39 U38
+@ U37 U36 U35 U34 U33 U32 U31 U30 U29 U28 U27 U26 U25 U24 U23 U22 U21 U20 U19 U18
+@ U17 U16 U15 U14 U13 U12 U11 U10 U9 U8 U7 U6
+$DESIGN_HIERARCHY add_42  3587.50 U6 U1_1_14 U1_1_1 U1_1_13 U1_1_12 U1_1_11
+@ U1_1_10 U1_1_9 U1_1_8 U1_1_7 U1_1_6 U1_1_5 U1_1_4 U1_1_3 U1_1_2 U5
+$DESIGN_HIERARCHY lt_41  2695.00 U50 U49 U48 U47 U46 U45 U44 U43 U42 U41 U40
+@ U39 U38 U37 U36 U35 U34 U33 U32 U31 U30 U29 U28 U27 U26 U25 U24 U23 U22 U21 U20
+@ U19 U18 U17 U16 U15 U14 U13 U12 U11 U10 U9 U8 U7 U6
+  )
+)
+)
