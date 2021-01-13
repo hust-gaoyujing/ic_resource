@@ -1,0 +1,135 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (STM3210C_EVAL), 0x0004 // Tools: 'ARM-ADS'
+Target (STM3210E_EVAL), 0x0004 // Tools: 'ARM-ADS'
+Target (STM3210B_EVAL), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(StdPeriph_Driver),1,0,0
+GRPOPT 2,(RVMDK),1,0,0
+GRPOPT 3,(User),1,0,0
+GRPOPT 4,(Doc),1,0,0
+GRPOPT 5,(CMSIS),1,0,0
+
+OPTFFF 1,1,1,0,0,0,0,0,<..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c><stm32f10x_usart.c> 
+OPTFFF 1,2,1,0,0,0,0,0,<..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c><misc.c> 
+OPTFFF 1,3,1,0,0,0,0,0,<..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c><stm32f10x_exti.c> 
+OPTFFF 1,4,1,0,0,0,0,0,<..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c><stm32f10x_gpio.c> 
+OPTFFF 1,5,1,0,0,0,0,0,<..\..\..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c><stm32f10x_rcc.c> 
+OPTFFF 2,6,2,0,0,0,0,0,<..\..\..\Libraries\CMSIS\Core\CM3\startup\arm\startup_stm32f10x_cl.s><startup_stm32f10x_cl.s> 
+OPTFFF 2,7,2,0,0,0,0,0,<..\..\..\Libraries\CMSIS\Core\CM3\startup\arm\startup_stm32f10x_hd.s><startup_stm32f10x_hd.s> 
+OPTFFF 2,8,2,0,0,0,0,0,<..\..\..\Libraries\CMSIS\Core\CM3\startup\arm\startup_stm32f10x_md.s><startup_stm32f10x_md.s> 
+OPTFFF 2,9,2,0,0,0,0,0,<..\..\..\Libraries\CMSIS\Core\CM3\startup\arm\startup_stm32f10x_ld.s><startup_stm32f10x_ld.s> 
+OPTFFF 3,10,1,2,0,55,77,0,<..\src\main.c><main.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,0,0,0,0,0,0,0,0,184,2,0,0,248,1,0,0 }
+OPTFFF 3,11,1,1107296256,0,0,0,0,<..\src\smartcard.c><smartcard.c> 
+OPTFFF 3,12,1,0,0,0,0,0,<..\src\stm32f10x_it.c><stm32f10x_it.c> 
+OPTFFF 3,13,1,0,0,0,0,0,<..\..\..\Utilities\STM32_EVAL\stm32_eval.c><stm32_eval.c> 
+OPTFFF 4,14,5,0,0,0,0,0,<..\readme.txt><readme.txt> 
+OPTFFF 5,15,1,0,0,0,0,0,<..\..\..\Libraries\CMSIS\Core\CM3\system_stm32f10x.c><system_stm32f10x.c> 
+
+
+TARGOPT 1, (STM3210C_EVAL)
+ ADSCLK=8000000
+  OPTTT 1,0,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\list\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 0
+  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F107xCSchedule)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F107xC)
+  OPTDBG 49150,1,()()()()()()()()()() (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGTARM)((1010=292,117,658,667,0)(1007=105,140,282,408,0)(1008=90,124,456,353,0)(1009=120,156,354,697,0)(100=203,122,839,788,0)(110=60,91,264,550,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=120,156,405,446,0)(120=75,107,486,505,0)(121=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(140=212,323,890,656,0)(240=837,497,1226,835,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=295,323,570,612,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(160=165,205,603,612,0)(161=-1,-1,-1,-1,0)(210=180,221,497,575,0)(220=195,237,662,735,0)(150=240,286,833,913,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0721C8E -O2190 -S0 -C0 -N00("ARM CoreSight JTAG-DP") -D00(3BA00477) -L00(4) -N01("Unknown JTAG device") -D01(16410041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_256 -FS08000000 -FL080000)
+  OPTWA 0,1,(SC_ADPU)
+  OPTWA 1,1,(SC_Responce)
+  OPTWA 2,1,(CardInserted)
+  OPTWA 3,1,(SC_A2R)
+  OPTWA 4,1,(SC_ATR_Table)
+  OPTWA 5,1,(ICCID_Content)
+  OPTWA 6,1,(IMSI_Content)
+  OPTMM 1,0,(0x40004800)
+  OPTMM 2,2,(0x40004800)
+  OPTMM 3,0,(0x20000082)
+  OPTMM 4,2,(0xE000E100)
+  OPTDF 0x86
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
+TARGOPT 2, (STM3210E_EVAL)
+ ADSCLK=8000000
+  OPTTT 1,0,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\list\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,0
+  OPTAX 255
+  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103ZE)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103ZE)
+  OPTDBG 49150,1,()()()()()()()()()() (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGTARM)((1010=292,117,658,667,0)(1007=105,140,282,408,0)(1008=90,124,456,353,0)(1009=120,156,354,697,0)(100=203,122,839,788,0)(110=60,91,264,550,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=120,156,405,446,0)(120=75,107,486,505,0)(121=-1,-1,-1,-1,0)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(124=75,107,486,505,0)(125=-1,-1,-1,-1,0)(126=-1,-1,-1,-1,0)(140=212,323,890,656,0)(240=837,497,1226,835,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=295,323,570,612,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(133=-1,-1,-1,-1,0)(160=165,205,603,612,0)(161=-1,-1,-1,-1,0)(162=354,297,792,704,0)(210=180,221,497,575,0)(211=-1,-1,-1,-1,0)(220=195,237,662,735,0)(221=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=240,286,833,913,0)(151=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0721C8E -O2062 -S0 -C0 -N00("ARM CoreSight JTAG-DP") -D00(3BA00477) -L00(4) -N01("Unknown JTAG device") -D01(16410041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000)
+  OPTBB 0,0,329,1,134223166,0,0,0,0,1,<main.c>()(\main\329)
+  OPTWA 0,1,(SC_ADPU)
+  OPTWA 1,1,(SC_Responce)
+  OPTWA 2,1,(CardInserted)
+  OPTWA 3,1,(SC_A2R)
+  OPTWA 4,1,(SC_ATR_Table)
+  OPTWA 5,1,(ICCID_Content)
+  OPTWA 6,1,(IMSI_Content)
+  OPTMM 1,0,(0x200000D5)
+  OPTMM 2,2,(0x40004800)
+  OPTMM 3,0,(0x20000082)
+  OPTMM 4,2,(0xE000E100)
+  OPTDF 0x84
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
+TARGOPT 3, (STM3210B_EVAL)
+ ADSCLK=8000000
+  OPTTT 1,0,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\list\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,0
+  OPTAX 255
+  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103VB)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103VB)
+  OPTDBG 49150,1,()()()()()()()()()() (BIN\UL2CM3.DLL)()()()
+  OPTKEY 0,(DLGUARM)((105=-1,-1,-1,-1,0)(106=-1,-1,-1,-1,0)(107=-1,-1,-1,-1,0))
+  OPTKEY 0,(DLGTARM)((1010=292,117,658,667,0)(1007=105,140,282,408,0)(1008=90,124,456,353,0)(1009=120,156,354,697,0)(100=203,122,839,788,0)(110=60,91,264,550,0)(111=-1,-1,-1,-1,0)(1011=-1,-1,-1,-1,0)(180=120,156,405,446,0)(120=75,107,486,505,0)(121=-1,-1,-1,-1,0)(122=-1,-1,-1,-1,0)(123=-1,-1,-1,-1,0)(124=75,107,486,505,0)(140=212,323,890,656,0)(240=837,497,1226,835,0)(190=-1,-1,-1,-1,0)(200=-1,-1,-1,-1,0)(170=295,323,570,612,0)(130=-1,-1,-1,-1,0)(131=-1,-1,-1,-1,0)(132=-1,-1,-1,-1,0)(133=-1,-1,-1,-1,0)(160=165,205,603,612,0)(161=-1,-1,-1,-1,0)(162=354,297,792,704,0)(210=180,221,497,575,0)(211=-1,-1,-1,-1,0)(220=195,237,662,735,0)(221=-1,-1,-1,-1,0)(230=-1,-1,-1,-1,0)(231=-1,-1,-1,-1,0)(232=-1,-1,-1,-1,0)(233=-1,-1,-1,-1,0)(150=240,286,833,913,0)(151=-1,-1,-1,-1,0))
+  OPTKEY 0,(ARMDBGFLAGS)()
+  OPTKEY 0,(UL2CM3)(-UV0721C8E -O2062 -S0 -C0 -N00("ARM CoreSight JTAG-DP") -D00(3BA00477) -L00(4) -N01("Unknown JTAG device") -D01(16410041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP7 -FO7 -FD20000000 -FC5000 -FN1 -FF0STM32F10x_128 -FS08000000 -FL020000)
+  OPTWA 0,1,(SC_ADPU)
+  OPTWA 1,1,(SC_Responce)
+  OPTWA 2,1,(CardInserted)
+  OPTWA 3,1,(SC_A2R)
+  OPTWA 4,1,(SC_ATR_Table)
+  OPTWA 5,1,(ICCID_Content)
+  OPTWA 6,1,(IMSI_Content)
+  OPTMM 1,0,(0x200000D5)
+  OPTMM 2,2,(0x40004800)
+  OPTMM 3,0,(0x20000082)
+  OPTMM 4,2,(0xE000E100)
+  OPTDF 0x84
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
