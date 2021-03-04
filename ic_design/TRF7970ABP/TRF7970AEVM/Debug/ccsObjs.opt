@@ -1,0 +1,1 @@
+"./uart.obj" "./type2.obj" "./trf797x.obj" "./target.obj" "./tag.obj" "./spi.obj" "./parallel.obj" "./nfc.obj" "./msp430f23x0.obj" "./mcu.obj" "./main.obj" "./iso15693.obj" "./iso14443b.obj" "./iso14443a.obj" "./initiator.obj" "./host.obj" "./highdata.obj" "./felica.obj" -l"libc.a" "../lnk_msp430f2370.cmd" 

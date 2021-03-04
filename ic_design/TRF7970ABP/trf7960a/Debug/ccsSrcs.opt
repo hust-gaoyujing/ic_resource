@@ -1,0 +1,1 @@
+"../host.c" "../iso14443a.c" "../iso14443b.c" "../iso15693.c" "../main.c" "../mcu.c" "../msp430f23x0.c" "../parallel.c" "../spi.c" "../trf796x.c" "../type2.c" "../uart.c" 

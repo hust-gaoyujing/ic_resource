@@ -1,0 +1,976 @@
+******************************************************************************
+                  MSP430 Linker PC v4.1.5                      
+******************************************************************************
+>> Linked Wed Dec 04 16:29:12 2013
+
+OUTPUT FILE NAME:   <TRF7970A_07_25_2011.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000caac
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  SFR                   00000000   00000010  00000000  00000010  RWIX
+  PERIPHERALS_8BIT      00000010   000000f0  00000000  000000f0  RWIX
+  PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
+  RAM                   00000200   00000800  000002c8  00000538  RWIX
+  INFOD                 00001000   00000040  00000000  00000040  RWIX
+  INFOC                 00001040   00000040  00000000  00000040  RWIX
+  INFOB                 00001080   00000040  00000000  00000040  RWIX
+  INFOA                 000010c0   00000040  00000000  00000040  RWIX
+  FLASH                 00008000   00007fde  000050ec  00002ef2  RWIX
+  INT00                 0000ffe0   00000002  00000000  00000002  RWIX
+  INT01                 0000ffe2   00000002  00000000  00000002  RWIX
+  INT02                 0000ffe4   00000002  00000000  00000002  RWIX
+  INT03                 0000ffe6   00000002  00000002  00000000  RWIX
+  INT04                 0000ffe8   00000002  00000000  00000002  RWIX
+  INT05                 0000ffea   00000002  00000000  00000002  RWIX
+  INT06                 0000ffec   00000002  00000000  00000002  RWIX
+  INT07                 0000ffee   00000002  00000002  00000000  RWIX
+  INT08                 0000fff0   00000002  00000000  00000002  RWIX
+  INT09                 0000fff2   00000002  00000002  00000000  RWIX
+  INT10                 0000fff4   00000002  00000000  00000002  RWIX
+  INT11                 0000fff6   00000002  00000000  00000002  RWIX
+  INT12                 0000fff8   00000002  00000000  00000002  RWIX
+  INT13                 0000fffa   00000002  00000000  00000002  RWIX
+  INT14                 0000fffc   00000002  00000000  00000002  RWIX
+  RESET                 0000fffe   00000002  00000002  00000000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.pinit     0    00008000    00000000     UNINITIALIZED
+
+.bss       0    00000200    00000228     UNINITIALIZED
+                  00000200    00000137     main.obj (.bss)
+                  00000337    00000001     highdata.obj (.bss)
+                  00000338    00000097     uart.obj (.bss)
+                  000003cf    00000001     host.obj (.bss)
+                  000003d0    0000001a     nfc.obj (.bss)
+                  000003ea    00000019     target.obj (.bss)
+                  00000403    00000001     spi.obj (.bss)
+                  00000404    00000011     iso14443a.obj (.bss)
+                  00000415    00000001     --HOLE--
+                  00000416    00000004     rts430.lib : _lock.obj (.bss)
+                  0000041a    00000004                : boot.obj (.bss)
+                  0000041e    00000004                : rand.obj (.bss)
+                  00000422    00000002     iso15693.obj (.bss)
+                  00000424    00000002     tag.obj (.bss)
+                  00000426    00000002     trf797x.obj (.bss)
+
+.stack     0    00000960    000000a0     UNINITIALIZED
+                  00000960    00000002     rts430.lib : boot.obj (.stack)
+                  00000962    0000009e     --HOLE--
+
+.text      0    00008000    00004d86     
+                  00008000    00000756     host.obj (.text:HostCommands)
+                  00008756    0000051c     iso14443a.obj (.text:Iso14443aLoop)
+                  00008c72    000003ac     iso15693.obj (.text:Iso15693Anticollision)
+                  0000901e    0000035e     host.obj (.text:HostRequestCommand)
+                  0000937c    000002da     target.obj (.text:TargetAnticollision)
+                  00009656    000002cc     target.obj (.text:TargetSelectedState)
+                  00009922    00000246     iso14443b.obj (.text:iso14443bAnticollision)
+                  00009b68    0000022a     trf797x.obj (.text:Trf797xTargetISR)
+                  00009d92    00000208     trf797x.obj (.text:Trf797xISR)
+                  00009f9a    000001f0     nfc.obj (.text:NfcMain)
+                  0000a18a    000001e2     tag.obj (.text:TagEmulation)
+                  0000a36c    000001c2     iso14443a.obj (.text:Iso14443aSelectCommand)
+                  0000a52e    000001bc     uart.obj (.text:UartRxReady)
+                  0000a6ea    000001b6     tag.obj (.text:Tag14443B)
+                  0000a8a0    000001a0     uart.obj (.text:UartGetLine)
+                  0000aa40    0000019a     felica.obj (.text:FelicaPolling)
+                  0000abda    00000178     type2.obj (.text:Type2ReadTwoBlocks)
+                  0000ad52    00000174     type2.obj (.text:Type2ReadFourBlocks)
+                  0000aec6    0000015a     host.obj (.text:HostRequest14443A)
+                  0000b020    00000158     type2.obj (.text:Type2WriteOneBlock)
+                  0000b178    00000158     type2.obj (.text:Type2WriteTwoBlocks)
+                  0000b2d0    00000156     nfc.obj (.text:NfcSend)
+                  0000b426    00000128     highdata.obj (.text:HighDataCommunication)
+                  0000b54e    000000fe     target.obj (.text:TargetAtributeResponse)
+                  0000b64c    000000f0     trf797x.obj (.text:Trf797xNFCmodeISR)
+                  0000b73c    000000e4     target.obj (.text:TargetPassive)
+                  0000b820    000000dc     initiator.obj (.text:InitiatorDepRequest)
+                  0000b8fc    000000d8     initiator.obj (.text:InitiatorRequest)
+                  0000b9d4    000000d4     iso14443b.obj (.text:iso14443bSlotMarkerCommand)
+                  0000baa8    000000bc     nfc.obj (.text:NfcRfCollisionAvoidance)
+                  0000bb64    000000b0     nfc.obj (.text:NfcFifoSend)
+                  0000bc14    000000b0     main.obj (.text:main)
+                  0000bcc4    00000096     trf797x.obj (.text:Trf797xPortB)
+                  0000bd5a    0000008c     iso14443a.obj (.text:ISO14443IRQWaitTimeout)
+                  0000bde6    0000007c     spi.obj (.text:SpiReadSingle)
+                  0000be62    00000076     spi.obj (.text:SpiReadCont)
+                  0000bed8    00000072     iso14443a.obj (.text:Iso14443a_halt)
+                  0000bf4a    00000072     spi.obj (.text:SpiWriteSingle)
+                  0000bfbc    00000070     uart.obj (.text:UartRxHandler)
+                  0000c02c    0000006a     iso14443a.obj (.text:Iso14443aAnticollision)
+                  0000c096    0000006a     parallel.obj (.text:ParallelReadSingle)
+                  0000c100    00000066     parallel.obj (.text:ParallelReadCont)
+                  0000c166    0000005e     spi.obj (.text:SpiWriteCont)
+                  0000c1c4    0000005c     msp430f23x0.obj (.text:Msp430f23x0OscSel)
+                  0000c220    0000005c     rts430.lib : lsr32.obj (.text:l_lsr_const)
+                  0000c27c    0000005a     iso14443a.obj (.text:Iso14443a_command)
+                  0000c2d6    00000056     type2.obj (.text:Type2Command)
+                  0000c32c    00000054     msp430f23x0.obj (.text:Msp430f23x0DelayMillisecond)
+                  0000c380    00000050     parallel.obj (.text:ParallelWriteCont)
+                  0000c3d0    0000004c     msp430f23x0.obj (.text:Msp430f23x0TimerAHandler)
+                  0000c41c    0000004c     rts430.lib : lsr16.obj (.text)
+                  0000c468    00000048     parallel.obj (.text:ParallelWriteSingle)
+                  0000c4b0    00000048     spi.obj (.text:SpiRawWrite)
+                  0000c4f8    00000048     rts430.lib : autoinit.obj (.text:_auto_init)
+                  0000c540    00000046     spi.obj (.text:SpiDirectCommand)
+                  0000c586    00000042     uart.obj (.text:UartPutByte)
+                  0000c5c8    0000003e     trf797x.obj (.text:Trf797xInitialSettings)
+                  0000c606    0000003e     uart.obj (.text:UartResponse)
+                  0000c644    0000003e     rts430.lib : lsl32.obj (.text:l_lsl_const)
+                  0000c682    00000038     parallel.obj (.text:ParallelDirectCommand)
+                  0000c6ba    00000038     parallel.obj (.text:ParallelRawWrite)
+                  0000c6f2    00000038     trf797x.obj (.text:Trf797xWriteIsoControl)
+                  0000c72a    00000038     rts430.lib : rand.obj (.text:rand)
+                  0000c762    00000032     iso15693.obj (.text:Iso15693FindTag)
+                  0000c794    00000032     spi.obj (.text:SpiUsciExtClkSet)
+                  0000c7c6    00000032     spi.obj (.text:SpiUsciSet)
+                  0000c7f8    00000032     uart.obj (.text:UartSetup)
+                  0000c82a    00000030     trf797x.obj (.text:Trf797xReadIrqStatus)
+                  0000c85a    0000002e     iso14443a.obj (.text:Iso14443_config)
+                  0000c888    0000002e     parallel.obj (.text:ParallelSetup)
+                  0000c8b6    0000002e     target.obj (.text:TargetActive)
+                  0000c8e4    0000002e     rts430.lib : mult32_hw.obj (.text)
+                  0000c912    0000002c                : asr16.obj (.text)
+                  0000c93e    0000002c                : div16s.obj (.text)
+                  0000c96a    0000002c                : lsl16.obj (.text)
+                  0000c996    0000002a     iso14443b.obj (.text:Iso14443bFindTag)
+                  0000c9c0    0000002a     trf797x.obj (.text:Trf797xResetIrqStatus)
+                  0000c9ea    0000002a     trf797x.obj (.text:Trf797xTurnRfOn)
+                  0000ca14    00000026     felica.obj (.text:FindFelica)
+                  0000ca3a    00000026     trf797x.obj (.text:Trf797xDisableSlotCounter)
+                  0000ca60    00000026     uart.obj (.text:UartBaudSet)
+                  0000ca86    00000026     uart.obj (.text:UartNibble2Ascii)
+                  0000caac    00000026     rts430.lib : boot.obj (.text:_c_int00_noexit)
+                  0000cad2    00000024     iso14443a.obj (.text:Iso14443aFindTag)
+                  0000caf6    00000024     trf797x.obj (.text:Trf797xTurnRfOff)
+                  0000cb1a    0000001e     spi.obj (.text:SpiSetup)
+                  0000cb38    0000001e     trf797x.obj (.text:Trf797xRawWrite)
+                  0000cb56    0000001e     trf797x.obj (.text:Trf797xReadCont)
+                  0000cb74    0000001e     trf797x.obj (.text:Trf797xReadSingle)
+                  0000cb92    0000001e     trf797x.obj (.text:Trf797xWriteCont)
+                  0000cbb0    0000001e     trf797x.obj (.text:Trf797xWriteSingle)
+                  0000cbce    0000001e     uart.obj (.text:UartSendCString)
+                  0000cbec    0000001a     msp430f23x0.obj (.text:Msp430f23x0CounterSet)
+                  0000cc06    0000001a     parallel.obj (.text:ParallelStopCondition)
+                  0000cc20    0000001a     trf797x.obj (.text:Trf797xDirectCommand)
+                  0000cc3a    00000016     parallel.obj (.text:ParallelStopContinuous)
+                  0000cc50    00000016     uart.obj (.text:UartPutBksp)
+                  0000cc66    00000016     rts430.lib : div16u.obj (.text)
+                  0000cc7c    00000014     mcu.obj (.text:McuDelayMillisecond)
+                  0000cc90    00000014     uart.obj (.text:UartPutChar)
+                  0000cca4    00000014     rts430.lib : mult16_hw.obj (.text)
+                  0000ccb8    00000012     parallel.obj (.text:ParallelStartCondition)
+                  0000ccca    00000012     trf797x.obj (.text:Trf797xCommunicationSetup)
+                  0000ccdc    00000012     uart.obj (.text:UartPutCrlf)
+                  0000ccee    00000012     rts430.lib : memcpy.obj (.text:memcpy)
+                  0000cd00    00000010     trf797x.obj (.text:Trf797xReset)
+                  0000cd10    00000010     trf797x.obj (.text:Trf797xRunDecoders)
+                  0000cd20    00000010     trf797x.obj (.text:Trf797xStopDecoders)
+                  0000cd30    00000010     trf797x.obj (.text:Trf797xTransmitNextSlot)
+                  0000cd40    00000010     rts430.lib : epilog.obj (.text)
+                  0000cd50    0000000e     mcu.obj (.text:McuOscSel)
+                  0000cd5e    0000000c     trf797x.obj (.text:Trf797xReConfig)
+                  0000cd6a    00000006     host.obj (.text:DeviceReset)
+                  0000cd70    00000006     mcu.obj (.text:McuCounterSet)
+                  0000cd76    00000006     tag.obj (.text:Tag14443A)
+                  0000cd7c    00000004     rts430.lib : pre_init.obj (.text:_system_pre_init)
+                  0000cd80    00000004                : exit.obj (.text:abort)
+                  0000cd84    00000002                : _lock.obj (.text:_nop)
+
+.const     0    0000cd86    000002ba     
+                  0000cd86    00000236     host.obj (.const:.string)
+                  0000cfbc    0000002c     type2.obj (.const:.string)
+                  0000cfe8    00000012     iso14443a.obj (.const:.string)
+                  0000cffa    00000012     iso14443b.obj (.const:.string)
+                  0000d00c    00000010     trf797x.obj (.const:.string)
+                  0000d01c    0000000c     iso15693.obj (.const:.string)
+                  0000d028    0000000c     target.obj (.const:.string)
+                  0000d034    0000000a     nfc.obj (.const:.string)
+                  0000d03e    00000002     host.obj (.const)
+
+.cinit     0    0000d040    000000ac     
+                  0000d040    00000041     uart.obj (.cinit)
+                  0000d081    00000001     --HOLE-- [fill = 0]
+                  0000d082    0000002f     main.obj (.cinit)
+                  0000d0b1    00000001     --HOLE-- [fill = 0]
+                  0000d0b2    0000000b     iso14443a.obj (.cinit)
+                  0000d0bd    00000001     --HOLE-- [fill = 0]
+                  0000d0be    0000000b     iso15693.obj (.cinit)
+                  0000d0c9    00000001     --HOLE-- [fill = 0]
+                  0000d0ca    00000008     rts430.lib : rand.obj (.cinit)
+                  0000d0d2    00000005     highdata.obj (.cinit)
+                  0000d0d7    00000001     --HOLE-- [fill = 0]
+                  0000d0d8    00000005     host.obj (.cinit)
+                  0000d0dd    00000001     --HOLE-- [fill = 0]
+                  0000d0de    00000005     spi.obj (.cinit)
+                  0000d0e3    00000001     --HOLE-- [fill = 0]
+                  0000d0e4    00000005     target.obj (.cinit)
+                  0000d0e9    00000001     --HOLE-- [fill = 0]
+                  0000d0ea    00000002     (.pad.cinit) [fill = 0]
+
+.int03     0    0000ffe6    00000002     
+                  0000ffe6    00000002     trf797x.obj (.int03)
+
+.int07     0    0000ffee    00000002     
+                  0000ffee    00000002     uart.obj (.int07)
+
+.int09     0    0000fff2    00000002     
+                  0000fff2    00000002     msp430f23x0.obj (.int09)
+
+.reset     0    0000fffe    00000002     
+                  0000fffe    00000002     rts430.lib : boot.obj (.reset)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000200   .bss
+00008000   .text
+00000057   BCSCTL1
+00000058   BCSCTL2
+00000053   BCSCTL3
+0000cd80   C$$EXIT
+00000059   CACTL1
+0000005a   CACTL2
+000010fb   CALBC1_12MHZ
+000010f9   CALBC1_16MHZ
+000010ff   CALBC1_1MHZ
+000010fd   CALBC1_8MHZ
+000010fa   CALDCO_12MHZ
+000010f8   CALDCO_16MHZ
+000010fe   CALDCO_1MHZ
+000010fc   CALDCO_8MHZ
+0000005b   CAPD
+0000039f   Command_Length
+000003a0   Command_Length_H
+000003a1   Command_Length_L
+00000056   DCOCTL
+0000cd6a   DeviceReset
+00000128   FCTL1
+0000012a   FCTL2
+0000012c   FCTL3
+0000aa40   FelicaPolling
+0000ca14   FindFelica
+0000b426   HighDataCommunication
+00008000   HostCommands
+0000aec6   HostRequest14443A
+0000901e   HostRequestCommand
+00000000   IE1
+00000001   IE2
+00000002   IFG1
+00000003   IFG2
+0000bd5a   ISO14443IRQWaitTimeout
+0000c912   I_ASR
+0000c93a   I_ASR_1
+0000c928   I_ASR_10
+0000c926   I_ASR_11
+0000c924   I_ASR_12
+0000c922   I_ASR_13
+0000c920   I_ASR_14
+0000c91e   I_ASR_15
+0000c938   I_ASR_2
+0000c936   I_ASR_3
+0000c934   I_ASR_4
+0000c932   I_ASR_5
+0000c930   I_ASR_6
+0000c92e   I_ASR_7
+0000c92c   I_ASR_8
+0000c92a   I_ASR_9
+0000c96a   I_LSL
+0000c992   I_LSL_1
+0000c980   I_LSL_10
+0000c97e   I_LSL_11
+0000c97c   I_LSL_12
+0000c97a   I_LSL_13
+0000c978   I_LSL_14
+0000c976   I_LSL_15
+0000c990   I_LSL_2
+0000c98e   I_LSL_3
+0000c98c   I_LSL_4
+0000c98a   I_LSL_5
+0000c988   I_LSL_6
+0000c986   I_LSL_7
+0000c984   I_LSL_8
+0000c982   I_LSL_9
+0000c41c   I_LSR
+0000c462   I_LSR_1
+0000c43e   I_LSR_10
+0000c43a   I_LSR_11
+0000c436   I_LSR_12
+0000c432   I_LSR_13
+0000c42e   I_LSR_14
+0000c42a   I_LSR_15
+0000c45e   I_LSR_2
+0000c45a   I_LSR_3
+0000c456   I_LSR_4
+0000c452   I_LSR_5
+0000c44e   I_LSR_6
+0000c44a   I_LSR_7
+0000c446   I_LSR_8
+0000c442   I_LSR_9
+0000b820   InitiatorDepRequest
+0000b8fc   InitiatorRequest
+0000c85a   Iso14443_config
+0000c02c   Iso14443aAnticollision
+0000cad2   Iso14443aFindTag
+00008756   Iso14443aLoop
+0000a36c   Iso14443aSelectCommand
+0000c27c   Iso14443a_command
+0000bed8   Iso14443a_halt
+0000c996   Iso14443bFindTag
+00008c72   Iso15693Anticollision
+0000c762   Iso15693FindTag
+0000c67c   L_LSL_1
+0000c658   L_LSL_10
+0000c654   L_LSL_11
+0000c650   L_LSL_12
+0000c64c   L_LSL_13
+0000c648   L_LSL_14
+0000c644   L_LSL_15
+0000c678   L_LSL_2
+0000c674   L_LSL_3
+0000c670   L_LSL_4
+0000c66c   L_LSL_5
+0000c668   L_LSL_6
+0000c664   L_LSL_7
+0000c660   L_LSL_8
+0000c65c   L_LSL_9
+0000c274   L_LSR_1
+0000c23e   L_LSR_10
+0000c238   L_LSR_11
+0000c232   L_LSR_12
+0000c22c   L_LSR_13
+0000c226   L_LSR_14
+0000c220   L_LSR_15
+0000c26e   L_LSR_2
+0000c268   L_LSR_3
+0000c262   L_LSR_4
+0000c25c   L_LSR_5
+0000c256   L_LSR_6
+0000c250   L_LSR_7
+0000c24a   L_LSR_8
+0000c244   L_LSR_9
+00000134   MAC
+00000136   MACS
+00000130   MPY
+00000132   MPYS
+0000cd70   McuCounterSet
+0000cc7c   McuDelayMillisecond
+0000cd50   McuOscSel
+0000cbec   Msp430f23x0CounterSet
+0000c32c   Msp430f23x0DelayMillisecond
+0000c1c4   Msp430f23x0OscSel
+0000c3d0   Msp430f23x0TimerAHandler
+0000bb64   NfcFifoSend
+00009f9a   NfcMain
+0000baa8   NfcRfCollisionAvoidance
+0000b2d0   NfcSend
+00000138   OP2
+00000022   P1DIR
+00000025   P1IE
+00000024   P1IES
+00000023   P1IFG
+00000020   P1IN
+00000021   P1OUT
+00000027   P1REN
+00000026   P1SEL
+0000002a   P2DIR
+0000002d   P2IE
+0000002c   P2IES
+0000002b   P2IFG
+00000028   P2IN
+00000029   P2OUT
+0000002f   P2REN
+0000002e   P2SEL
+0000001a   P3DIR
+00000018   P3IN
+00000019   P3OUT
+00000010   P3REN
+0000001b   P3SEL
+0000001e   P4DIR
+0000001c   P4IN
+0000001d   P4OUT
+00000011   P4REN
+0000001f   P4SEL
+0000c682   ParallelDirectCommand
+0000c6ba   ParallelRawWrite
+0000c100   ParallelReadCont
+0000c096   ParallelReadSingle
+0000c888   ParallelSetup
+0000ccb8   ParallelStartCondition
+0000cc06   ParallelStopCondition
+0000cc3a   ParallelStopContinuous
+0000c380   ParallelWriteCont
+0000c468   ParallelWriteSingle
+0000013c   RESHI
+0000013a   RESLO
+0000039d   Read_Pointer
+0000013e   SUMEXT
+0000c540   SpiDirectCommand
+0000c4b0   SpiRawWrite
+0000be62   SpiReadCont
+0000bde6   SpiReadSingle
+0000cb1a   SpiSetup
+0000c794   SpiUsciExtClkSet
+0000c7c6   SpiUsciSet
+0000c166   SpiWriteCont
+0000bf4a   SpiWriteSingle
+0000039e   Start_Command_Addr
+00000172   TACCR0
+00000174   TACCR1
+00000176   TACCR2
+00000162   TACCTL0
+00000164   TACCTL1
+00000166   TACCTL2
+00000160   TACTL
+0000012e   TAIV
+00000170   TAR
+00000192   TBCCR0
+00000194   TBCCR1
+00000196   TBCCR2
+00000182   TBCCTL0
+00000184   TBCCTL1
+00000186   TBCCTL2
+00000180   TBCTL
+0000011e   TBIV
+00000190   TBR
+0000cd76   Tag14443A
+0000a6ea   Tag14443B
+0000a18a   TagEmulation
+0000c8b6   TargetActive
+0000937c   TargetAnticollision
+0000b54e   TargetAtributeResponse
+0000b73c   TargetPassive
+00009656   TargetSelectedState
+0000ccca   Trf797xCommunicationSetup
+0000cc20   Trf797xDirectCommand
+0000ca3a   Trf797xDisableSlotCounter
+00009d92   Trf797xISR
+0000c5c8   Trf797xInitialSettings
+0000b64c   Trf797xNFCmodeISR
+0000bcc4   Trf797xPortB
+0000cb38   Trf797xRawWrite
+0000cd5e   Trf797xReConfig
+0000cb56   Trf797xReadCont
+0000c82a   Trf797xReadIrqStatus
+0000cb74   Trf797xReadSingle
+0000cd00   Trf797xReset
+0000c9c0   Trf797xResetIrqStatus
+0000cd10   Trf797xRunDecoders
+0000cd20   Trf797xStopDecoders
+00009b68   Trf797xTargetISR
+0000cd30   Trf797xTransmitNextSlot
+0000caf6   Trf797xTurnRfOff
+0000c9ea   Trf797xTurnRfOn
+0000cb92   Trf797xWriteCont
+0000c6f2   Trf797xWriteIsoControl
+0000cbb0   Trf797xWriteSingle
+0000c2d6   Type2Command
+0000ad52   Type2ReadFourBlocks
+0000abda   Type2ReadTwoBlocks
+0000b020   Type2WriteOneBlock
+0000b178   Type2WriteTwoBlocks
+0000005d   UCA0ABCTL
+00000062   UCA0BR0
+00000063   UCA0BR1
+00000060   UCA0CTL0
+00000061   UCA0CTL1
+0000005f   UCA0IRRCTL
+0000005e   UCA0IRTCTL
+00000064   UCA0MCTL
+00000066   UCA0RXBUF
+00000065   UCA0STAT
+00000067   UCA0TXBUF
+0000006a   UCB0BR0
+0000006b   UCB0BR1
+00000068   UCB0CTL0
+00000069   UCB0CTL1
+0000006c   UCB0I2CIE
+00000118   UCB0I2COA
+0000011a   UCB0I2CSA
+0000006e   UCB0RXBUF
+0000006d   UCB0STAT
+0000006f   UCB0TXBUF
+0000ca60   UartBaudSet
+0000a8a0   UartGetLine
+0000ca86   UartNibble2Ascii
+0000cc50   UartPutBksp
+0000c586   UartPutByte
+0000cc90   UartPutChar
+0000ccdc   UartPutCrlf
+0000c606   UartResponse
+0000bfbc   UartRxHandler
+0000a52e   UartRxReady
+0000cbce   UartSendCString
+0000c7f8   UartSetup
+00000120   WDTCTL
+0000039c   Write_Pointer
+00000a00   __STACK_END
+000000a0   __STACK_SIZE
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+ffffffff   __binit__
+00000200   __bss__
+ffffffff   __c_args__
+0000d040   __cinit__
+0000c93e   __divi
+0000cc66   __divu
+00000428   __end__
+0000cd86   __etext__
+0000cca4   __mpyi_hw
+0000c8e4   __mpyl_hw
+ffffffff   __pinit__
+0000c93e   __remi
+0000cc66   __remu
+00008000   __text__
+0000c4f8   _auto_init
+0000caac   _c_int00
+0000caac   _c_int00_noexit
+0000041a   _cleanup_ptr
+0000041c   _dtors_ptr
+00000416   _lock
+0000cd84   _nop
+0000fffe   _reset_vector
+00000960   _stack
+0000cd7c   _system_pre_init
+00000418   _unlock
+0000cd80   abort
+000003d0   active
+00000422   afi
+ffffffff   binit
+000003f7   block_no_se
+00000200   buf
+0000d040   cinit
+00000412   coll_poss
+00000426   command
+00000404   complete_uid
+00000337   direct_mode
+0000032c   enable
+00000428   end
+0000cd86   etext
+000003ce   first_UART_RX
+00000423   flags
+0000cd4c   func_epilog_1
+0000cd4a   func_epilog_2
+0000cd48   func_epilog_3
+0000cd46   func_epilog_4
+0000cd44   func_epilog_5
+0000cd42   func_epilog_6
+0000cd40   func_epilog_7
+000003cf   host
+0000032d   i_reg
+0000032e   irq_flag
+00009922   iso14443bAnticollision
+0000b9d4   iso14443bSlotMarkerCommand
+0000bc14   main
+0000ccee   memcpy
+000003d1   nfc_iso
+000003f6   nfc_protocol
+00000332   nfc_state
+ffffffff   pinit
+000003f8   pupi
+0000c72a   rand
+00000336   reader_mode
+00000334   remote_flag
+0000d03e   revision
+00000338   rx_data
+000003cc   rx_data_count
+000003ca   rx_data_length
+000003cd   rx_done
+0000032f   rx_error_flag
+00000425   rx_len
+00000330   rxtx_state
+00000335   stand_alone_flag
+00000424   tag_flag
+000003ea   target_cid
+00000403   temp
+000003a2   temp_rx_buff
+000003cb   temp_rx_buff_length
+000003d2   tx_buf
+00000413   uid_pos
+00000414   uid_pos1
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   IE1
+00000001   IE2
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+00000002   IFG1
+00000003   IFG2
+00000010   P3REN
+00000011   P4REN
+00000018   P3IN
+00000019   P3OUT
+0000001a   P3DIR
+0000001b   P3SEL
+0000001c   P4IN
+0000001d   P4OUT
+0000001e   P4DIR
+0000001f   P4SEL
+00000020   P1IN
+00000021   P1OUT
+00000022   P1DIR
+00000023   P1IFG
+00000024   P1IES
+00000025   P1IE
+00000026   P1SEL
+00000027   P1REN
+00000028   P2IN
+00000029   P2OUT
+0000002a   P2DIR
+0000002b   P2IFG
+0000002c   P2IES
+0000002d   P2IE
+0000002e   P2SEL
+0000002f   P2REN
+00000053   BCSCTL3
+00000056   DCOCTL
+00000057   BCSCTL1
+00000058   BCSCTL2
+00000059   CACTL1
+0000005a   CACTL2
+0000005b   CAPD
+0000005d   UCA0ABCTL
+0000005e   UCA0IRTCTL
+0000005f   UCA0IRRCTL
+00000060   UCA0CTL0
+00000061   UCA0CTL1
+00000062   UCA0BR0
+00000063   UCA0BR1
+00000064   UCA0MCTL
+00000065   UCA0STAT
+00000066   UCA0RXBUF
+00000067   UCA0TXBUF
+00000068   UCB0CTL0
+00000069   UCB0CTL1
+0000006a   UCB0BR0
+0000006b   UCB0BR1
+0000006c   UCB0I2CIE
+0000006d   UCB0STAT
+0000006e   UCB0RXBUF
+0000006f   UCB0TXBUF
+000000a0   __STACK_SIZE
+00000118   UCB0I2COA
+0000011a   UCB0I2CSA
+0000011e   TBIV
+00000120   WDTCTL
+00000128   FCTL1
+0000012a   FCTL2
+0000012c   FCTL3
+0000012e   TAIV
+00000130   MPY
+00000132   MPYS
+00000134   MAC
+00000136   MACS
+00000138   OP2
+0000013a   RESLO
+0000013c   RESHI
+0000013e   SUMEXT
+00000160   TACTL
+00000162   TACCTL0
+00000164   TACCTL1
+00000166   TACCTL2
+00000170   TAR
+00000172   TACCR0
+00000174   TACCR1
+00000176   TACCR2
+00000180   TBCTL
+00000182   TBCCTL0
+00000184   TBCCTL1
+00000186   TBCCTL2
+00000190   TBR
+00000192   TBCCR0
+00000194   TBCCR1
+00000196   TBCCR2
+00000200   .bss
+00000200   __bss__
+00000200   buf
+0000032c   enable
+0000032d   i_reg
+0000032e   irq_flag
+0000032f   rx_error_flag
+00000330   rxtx_state
+00000332   nfc_state
+00000334   remote_flag
+00000335   stand_alone_flag
+00000336   reader_mode
+00000337   direct_mode
+00000338   rx_data
+0000039c   Write_Pointer
+0000039d   Read_Pointer
+0000039e   Start_Command_Addr
+0000039f   Command_Length
+000003a0   Command_Length_H
+000003a1   Command_Length_L
+000003a2   temp_rx_buff
+000003ca   rx_data_length
+000003cb   temp_rx_buff_length
+000003cc   rx_data_count
+000003cd   rx_done
+000003ce   first_UART_RX
+000003cf   host
+000003d0   active
+000003d1   nfc_iso
+000003d2   tx_buf
+000003ea   target_cid
+000003f6   nfc_protocol
+000003f7   block_no_se
+000003f8   pupi
+00000403   temp
+00000404   complete_uid
+00000412   coll_poss
+00000413   uid_pos
+00000414   uid_pos1
+00000416   _lock
+00000418   _unlock
+0000041a   _cleanup_ptr
+0000041c   _dtors_ptr
+00000422   afi
+00000423   flags
+00000424   tag_flag
+00000425   rx_len
+00000426   command
+00000428   __end__
+00000428   end
+00000960   _stack
+00000a00   __STACK_END
+000010f8   CALDCO_16MHZ
+000010f9   CALBC1_16MHZ
+000010fa   CALDCO_12MHZ
+000010fb   CALBC1_12MHZ
+000010fc   CALDCO_8MHZ
+000010fd   CALBC1_8MHZ
+000010fe   CALDCO_1MHZ
+000010ff   CALBC1_1MHZ
+00008000   .text
+00008000   HostCommands
+00008000   __text__
+00008756   Iso14443aLoop
+00008c72   Iso15693Anticollision
+0000901e   HostRequestCommand
+0000937c   TargetAnticollision
+00009656   TargetSelectedState
+00009922   iso14443bAnticollision
+00009b68   Trf797xTargetISR
+00009d92   Trf797xISR
+00009f9a   NfcMain
+0000a18a   TagEmulation
+0000a36c   Iso14443aSelectCommand
+0000a52e   UartRxReady
+0000a6ea   Tag14443B
+0000a8a0   UartGetLine
+0000aa40   FelicaPolling
+0000abda   Type2ReadTwoBlocks
+0000ad52   Type2ReadFourBlocks
+0000aec6   HostRequest14443A
+0000b020   Type2WriteOneBlock
+0000b178   Type2WriteTwoBlocks
+0000b2d0   NfcSend
+0000b426   HighDataCommunication
+0000b54e   TargetAtributeResponse
+0000b64c   Trf797xNFCmodeISR
+0000b73c   TargetPassive
+0000b820   InitiatorDepRequest
+0000b8fc   InitiatorRequest
+0000b9d4   iso14443bSlotMarkerCommand
+0000baa8   NfcRfCollisionAvoidance
+0000bb64   NfcFifoSend
+0000bc14   main
+0000bcc4   Trf797xPortB
+0000bd5a   ISO14443IRQWaitTimeout
+0000bde6   SpiReadSingle
+0000be62   SpiReadCont
+0000bed8   Iso14443a_halt
+0000bf4a   SpiWriteSingle
+0000bfbc   UartRxHandler
+0000c02c   Iso14443aAnticollision
+0000c096   ParallelReadSingle
+0000c100   ParallelReadCont
+0000c166   SpiWriteCont
+0000c1c4   Msp430f23x0OscSel
+0000c220   L_LSR_15
+0000c226   L_LSR_14
+0000c22c   L_LSR_13
+0000c232   L_LSR_12
+0000c238   L_LSR_11
+0000c23e   L_LSR_10
+0000c244   L_LSR_9
+0000c24a   L_LSR_8
+0000c250   L_LSR_7
+0000c256   L_LSR_6
+0000c25c   L_LSR_5
+0000c262   L_LSR_4
+0000c268   L_LSR_3
+0000c26e   L_LSR_2
+0000c274   L_LSR_1
+0000c27c   Iso14443a_command
+0000c2d6   Type2Command
+0000c32c   Msp430f23x0DelayMillisecond
+0000c380   ParallelWriteCont
+0000c3d0   Msp430f23x0TimerAHandler
+0000c41c   I_LSR
+0000c42a   I_LSR_15
+0000c42e   I_LSR_14
+0000c432   I_LSR_13
+0000c436   I_LSR_12
+0000c43a   I_LSR_11
+0000c43e   I_LSR_10
+0000c442   I_LSR_9
+0000c446   I_LSR_8
+0000c44a   I_LSR_7
+0000c44e   I_LSR_6
+0000c452   I_LSR_5
+0000c456   I_LSR_4
+0000c45a   I_LSR_3
+0000c45e   I_LSR_2
+0000c462   I_LSR_1
+0000c468   ParallelWriteSingle
+0000c4b0   SpiRawWrite
+0000c4f8   _auto_init
+0000c540   SpiDirectCommand
+0000c586   UartPutByte
+0000c5c8   Trf797xInitialSettings
+0000c606   UartResponse
+0000c644   L_LSL_15
+0000c648   L_LSL_14
+0000c64c   L_LSL_13
+0000c650   L_LSL_12
+0000c654   L_LSL_11
+0000c658   L_LSL_10
+0000c65c   L_LSL_9
+0000c660   L_LSL_8
+0000c664   L_LSL_7
+0000c668   L_LSL_6
+0000c66c   L_LSL_5
+0000c670   L_LSL_4
+0000c674   L_LSL_3
+0000c678   L_LSL_2
+0000c67c   L_LSL_1
+0000c682   ParallelDirectCommand
+0000c6ba   ParallelRawWrite
+0000c6f2   Trf797xWriteIsoControl
+0000c72a   rand
+0000c762   Iso15693FindTag
+0000c794   SpiUsciExtClkSet
+0000c7c6   SpiUsciSet
+0000c7f8   UartSetup
+0000c82a   Trf797xReadIrqStatus
+0000c85a   Iso14443_config
+0000c888   ParallelSetup
+0000c8b6   TargetActive
+0000c8e4   __mpyl_hw
+0000c912   I_ASR
+0000c91e   I_ASR_15
+0000c920   I_ASR_14
+0000c922   I_ASR_13
+0000c924   I_ASR_12
+0000c926   I_ASR_11
+0000c928   I_ASR_10
+0000c92a   I_ASR_9
+0000c92c   I_ASR_8
+0000c92e   I_ASR_7
+0000c930   I_ASR_6
+0000c932   I_ASR_5
+0000c934   I_ASR_4
+0000c936   I_ASR_3
+0000c938   I_ASR_2
+0000c93a   I_ASR_1
+0000c93e   __divi
+0000c93e   __remi
+0000c96a   I_LSL
+0000c976   I_LSL_15
+0000c978   I_LSL_14
+0000c97a   I_LSL_13
+0000c97c   I_LSL_12
+0000c97e   I_LSL_11
+0000c980   I_LSL_10
+0000c982   I_LSL_9
+0000c984   I_LSL_8
+0000c986   I_LSL_7
+0000c988   I_LSL_6
+0000c98a   I_LSL_5
+0000c98c   I_LSL_4
+0000c98e   I_LSL_3
+0000c990   I_LSL_2
+0000c992   I_LSL_1
+0000c996   Iso14443bFindTag
+0000c9c0   Trf797xResetIrqStatus
+0000c9ea   Trf797xTurnRfOn
+0000ca14   FindFelica
+0000ca3a   Trf797xDisableSlotCounter
+0000ca60   UartBaudSet
+0000ca86   UartNibble2Ascii
+0000caac   _c_int00
+0000caac   _c_int00_noexit
+0000cad2   Iso14443aFindTag
+0000caf6   Trf797xTurnRfOff
+0000cb1a   SpiSetup
+0000cb38   Trf797xRawWrite
+0000cb56   Trf797xReadCont
+0000cb74   Trf797xReadSingle
+0000cb92   Trf797xWriteCont
+0000cbb0   Trf797xWriteSingle
+0000cbce   UartSendCString
+0000cbec   Msp430f23x0CounterSet
+0000cc06   ParallelStopCondition
+0000cc20   Trf797xDirectCommand
+0000cc3a   ParallelStopContinuous
+0000cc50   UartPutBksp
+0000cc66   __divu
+0000cc66   __remu
+0000cc7c   McuDelayMillisecond
+0000cc90   UartPutChar
+0000cca4   __mpyi_hw
+0000ccb8   ParallelStartCondition
+0000ccca   Trf797xCommunicationSetup
+0000ccdc   UartPutCrlf
+0000ccee   memcpy
+0000cd00   Trf797xReset
+0000cd10   Trf797xRunDecoders
+0000cd20   Trf797xStopDecoders
+0000cd30   Trf797xTransmitNextSlot
+0000cd40   func_epilog_7
+0000cd42   func_epilog_6
+0000cd44   func_epilog_5
+0000cd46   func_epilog_4
+0000cd48   func_epilog_3
+0000cd4a   func_epilog_2
+0000cd4c   func_epilog_1
+0000cd50   McuOscSel
+0000cd5e   Trf797xReConfig
+0000cd6a   DeviceReset
+0000cd70   McuCounterSet
+0000cd76   Tag14443A
+0000cd7c   _system_pre_init
+0000cd80   C$$EXIT
+0000cd80   abort
+0000cd84   _nop
+0000cd86   __etext__
+0000cd86   etext
+0000d03e   revision
+0000d040   __cinit__
+0000d040   cinit
+0000fffe   _reset_vector
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   __pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[366 symbols]

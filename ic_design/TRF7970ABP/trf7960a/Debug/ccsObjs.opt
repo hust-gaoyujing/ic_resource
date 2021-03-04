@@ -1,0 +1,1 @@
+"./host.obj" "./iso14443a.obj" "./iso14443b.obj" "./iso15693.obj" "./main.obj" "./mcu.obj" "./msp430f23x0.obj" "./parallel.obj" "./spi.obj" "./trf796x.obj" "./type2.obj" "./uart.obj" "../lnk_msp430f2370.cmd" -llibc.a 
