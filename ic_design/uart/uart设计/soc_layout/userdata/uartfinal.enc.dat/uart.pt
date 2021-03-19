@@ -1,0 +1,147 @@
+#/**************************************************
+# * Timing constraint file in PT format
+# **************************************************/
+create_clock -name clock -period 100.0000 -waveform { 0.0000 50.0000}\
+   [get_ports {clk}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {serial_in}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {tx_en}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[0]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[1]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[2]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[3]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[4]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[5]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[6]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {para_data_in[7]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {rst_n}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[0]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[1]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[2]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[3]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[4]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[5]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[6]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[7]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[8]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[9]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[10]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[11]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[12]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[13]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[14]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {divisor[15]}] 
+set_input_delay -clock clock 40.0000 \
+   [get_ports {clk}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {clk_tx}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {rx_flag}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[0]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[1]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[2]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[3]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[4]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[5]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[6]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {para_data_out[7]}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {tx_flag}] 
+set_output_delay -clock clock 40.0000 \
+   [get_ports {serial_out}] 
+set_clock_transition 2.000 -rise \
+   [get_clocks {clock}] 
+set_clock_transition 2.000 -fall \
+   [get_clocks {clock}] 
+set_clock_uncertainty 2.000 -setup \
+   [get_clocks {clock}] 
+set_clock_uncertainty 0.300 -hold \
+   [get_clocks {clock}] 
+set_max_fanout 10.0000 \
+   [current_design]
+set_operating_conditions BCCOM -library tcb773pbc 
+set_wire_load_model -name TSMC16K_Conservative -library tcb773pbc 
+set_load -pin_load 2.0000 \
+   [get_ports {serial_out}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {serial_out}] 
+set_load -pin_load 2.0000 \
+   [get_ports {tx_flag}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {tx_flag}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[7]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[7]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[6]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[6]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[5]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[5]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[4]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[4]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[3]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[3]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[2]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[2]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[1]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[1]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {para_data_out[0]}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {para_data_out[0]}] 
+set_load -pin_load 2.0000 \
+   [get_ports {rx_flag}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {rx_flag}] 
+set_load -pin_load 2.0000 \
+   [get_ports {clk_tx}] 
+set_load -min -pin_load 2.0000 \
+   [get_ports {clk_tx}] 
+set_propagated_clock \
+   [get_ports {clk}] 

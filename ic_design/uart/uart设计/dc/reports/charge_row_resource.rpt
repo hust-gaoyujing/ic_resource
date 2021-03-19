@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : resources
+Design : dll_syn
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 11:09:40 2008
+****************************************
+
+Resource Sharing Report for design dll_syn in file
+        /export/home/forest/xs/unmapped/dll_syn.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r71      | DW01_dec     | width=4    |               | sub_45 sub_51        |
+| r77      | DW01_cmp2    | width=4    |               | gt_19                |
+| r79      | DW01_cmp2    | width=4    |               | lt_36                |
+| r81      | DW01_dec     | width=4    |               | sub_41               |
+| r83      | DW01_sub     | width=4    |               | sub_43               |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1

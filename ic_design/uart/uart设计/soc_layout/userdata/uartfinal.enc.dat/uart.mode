@@ -1,0 +1,14 @@
+setCteReport
+setAnalysisMode  -allClockDomain -hold -skew -noUsefulSkew -log -warn -caseAnalysis -noSequentialConstProp -moduleIOCstr -clockTree -clkSrcPath -timingSelfLoopsSkew -async -useOutputPinCap -latch -latchDelayCalIteration 2 -timeBorrowing -latchFastDelayCal -clockGatingCheck -disableMultipleDriveNet -bcWc -nocrpr -markClkNetsBeforeConstProp -noUseDetailRC -noHonorCDTV
+setTrialRouteMode  -handlePreroute
+setOptMode -highEffort -addPortAsNeeded -setupTargetSlack 0.000  -holdTargetSlack 0.000  -drcMargin 0.00  -maxDensity 0.95  -fixDrc -noFixFanoutLoad -addInst -deleteInst -downsizeInst -optimizeFF -optimizeConstantNet -noSimplifyNetlist -optimizeNetsAcrossDiffVoltPDs -dontBufferAssignNets
+setExtractRCMode -detail -rcdb .fe2pks.rcdb.gz -reduce 0 -decoupled -viaCap
+setDelayCalMode  -default 
+setCTSMode  -topPreferredLayer 4 -bottomPreferredLayer 3 -preferredExtraSpace 1 -handlePreroute -noAddClockRootProp -noUseLibMaxFanout -noUseLibMaxCap -noSetDPinAsSync -noSetIoPinAsSync -noFence -noUseSingleDelim -noUseCTSRouteGuide -fixedNonLeafInst -fixedLeafInst -leafRouteTypeOnGate -noUseGuideOnM2 -overlapCheck -HTMLReport -noRouteClkNet -postOpt -noOptAddBuffer -moveGate -noSnapGatingCell -noRouteWithFiller -highEffort
+setStreamOutMode -virtualConnection ON -SEvianames OFF -specifyViaName %t_VIA%u 
+setNanoRouteMode -quiet routeInsertAntennaDiode true
+setNanoRouteMode -quiet routeSiEffort "low"
+
+setPlaceMode -timingdriven -reorderScan -congMediumEffort -doCongOpt -noModulePlan -maxDensity 0.2 -ignoreScan
+setScanReorderMode  -mediumEffort
+setUsefulSkewMode  -noMaxSkew -useCells { ITBS2 ITBS1 ITBS0 ITB2 ITB1 ITB0 ICBS2 ICBS1 ICBS0 ICB2 ICB1 ICB0 DEL5 DEL3 DEL2 BUF6 BUF5 BUF4 BUF3 BUF2 BUF1 ITBN2 ITBN1 ITBN0 INV6 INV5 INV4 INV3 INV2 INV1 INV0 } -boundary -noEcoRoute -noMaxAllowedDelay -noAllNegEndPoints

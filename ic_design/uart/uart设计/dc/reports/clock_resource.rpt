@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : resources
+Design : baud_rate
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 06:07:49 2008
+****************************************
+
+Resource Sharing Report for design baud_rate in file
+        /export/home/forest/xs/unmapped/baud_rate.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r56      | DW01_cmp2    | width=16   |               | lt_41                |
+| r58      | DW01_inc     | width=16   |               | add_42               |
+| r60      | DW01_cmp2    | width=16   |               | lte_54               |
+===============================================================================
+
+
+Implementation Report
+
+=============================================================================
+|                  |                  | Current          | Set              |
+| Cell             | Module           | Implementation   | Implementation   |
+=============================================================================
+| add_42           | DW01_inc         | rpl              |                  |
+=============================================================================
+
+No multiplexors to report
+1

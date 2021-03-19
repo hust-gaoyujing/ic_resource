@@ -1,0 +1,10 @@
+<interfaceDefinition version='1.1' language='verilog' kind='module' name='baud_rate_generator'>
+    <portList>
+
+      <port name='CLK' direction='input' type='' />
+      <port name='DIVISOR' direction='input' type='[15:0]' />
+      <port name='RST_N' direction='input' type='' />
+      <port name='BAUDOUT_CLK' direction='output' type='' />
+
+    </portList>
+</interfaceDefinition>

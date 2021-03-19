@@ -1,0 +1,34 @@
+#
+# First Encounter (Version 05.20-p002_1)
+#
+# DESIGN:      uart
+# DATE:        Fri Dec  5 11:01:46 2008
+#
+#
+
+
+#
+#Clock Section
+#
+AutoCTSRootPin   clk
+Period	    100000ps
+MaxDelay         100000ps
+MinDelay         0ps
+MaxSkew          2000ps
+SinkMaxTran      2000ps
+BufMaxTran       2000ps
+Obstruction      NO
+DetailReport     YES
+PadBufAfterGate     NO
+LevelBalanced     NO
+RouteClkNet      NO
+PostOpt          YES
+OptAddBuffer     NO
+OptAddBufferLimit  50
+NoGating         NO
+Buffer BUF1 BUF2 BUF3 BUF1 DEL5 DEL3 DEL2 BUF2 BUF3 BUF4 BUF5 BUF6 INV0 INV1 INV2 INV3 INV4 INV5 INV6 
+END
+
+
+
+

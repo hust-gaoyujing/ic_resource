@@ -1,0 +1,192 @@
+m255
+13
+cModel Technology
+dE:\dac_final_simulation
+Eand2
+w1224080352
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+dF:\ic_project\function_simulation\modelsim
+FF:/ic_project/function_simulation/modelsim/and2.vhd
+l0
+L5
+V8[86_AULa^Um5H>jRgFFd0
+OE;C;6.0d;29
+32
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+Artl
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work and2 8[86_AULa^Um5H>jRgFFd0
+l12
+L11
+Vn^MfblW49:UWhQ11bh>RU0
+OE;C;6.0d;29
+32
+M1 ieee std_logic_1164
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+vbaud_rate_generator
+IHnc4>WLM7IoRi[DQ>m6>Z2
+VEA:Db5BPY<fSh1^k7`;go3
+dF:\ic_project\function_simulation\modelsim
+w1223126152
+FF:/ic_project/function_simulation/modelsim/Baud_rate_generator.v
+L0 17
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vbaud_rate_generator_tb
+IiZ`c:mRDE9XB80^?S]``a3
+V`@XY_=goYH?8RdEd[ATd[1
+dF:\ic_project\function_simulation\modelsim
+w1222931150
+Fbaud_rate_generator_tb.v
+L0 3
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+Efulladder
+w1224076036
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+dF:\ic_project\function_simulation\modelsim
+FF:/ic_project/function_simulation/modelsim/fulladder.vhd
+l0
+L5
+V4ZLcHB=gk6G3>oj>P;C];0
+OE;C;6.0d;29
+32
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+Artl
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fulladder 4ZLcHB=gk6G3>oj>P;C];0
+l12
+L11
+V3Q0^7Xog<;`h^942>20Ci3
+OE;C;6.0d;29
+32
+M1 ieee std_logic_1164
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+Ehalfadder
+w1224077427
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+dF:\ic_project\function_simulation\modelsim
+FF:/ic_project/function_simulation/modelsim/halfadder.vhd
+l0
+L5
+VWETFNlI]`WEk684gCMU872
+OE;C;6.0d;29
+32
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+Artl
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work halfadder WETFNlI]`WEk684gCMU872
+l12
+L11
+VH06S^5_iHaM5CL>_RUObd3
+OE;C;6.0d;29
+32
+M1 ieee std_logic_1164
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+Emul_2bit
+w1224080566
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+dF:\ic_project\function_simulation\modelsim
+FF:/ic_project/function_simulation/modelsim/mul_2bit.vhd
+l0
+L5
+VBJ:C@=0lf@@m;QD_>iMDc2
+OE;C;6.0d;29
+32
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+Astructural
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work mul_2bit BJ:C@=0lf@@m;QD_>iMDc2
+l29
+L12
+VZ:B6g?0l:`eHJZWC`Y[_33
+OE;C;6.0d;29
+32
+M1 ieee std_logic_1164
+o-work work -2002 -explicit
+tExplicit 1 GenerateLoopIterationMax 100000
+vrxblock
+IRC@8J28HELQjjGQ?SL0@Z1
+VzM:le7e<0BEAf6FDSPg:63
+dF:\ic_project\function_simulation\modelsim
+w1223463559
+FF:/ic_project/function_simulation/modelsim/rxblock.v
+L0 16
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vrxblock_tb
+IH<O;n@>V1R9dN1:9T4ZCT3
+VmC2h@O]SKGB[YoGo7[a^m0
+dF:\ic_project\function_simulation\modelsim
+w1223302845
+Frxblock_tb.v
+L0 2
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vtxblock
+I^fUTWVH=<Ubz3=h^NfeKj3
+VKG?Dn`ZLIP]nFlc2DSN0W0
+dF:\ic_project\function_simulation\modelsim
+w1223466497
+FF:/ic_project/function_simulation/modelsim/txblock.v
+L0 15
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vtxblock_tb
+I9UaSCXRdo4@7SmTBj>VNW2
+V[WMQz]EP3US2KSaS1z4@N1
+dF:\ic_project\function_simulation\modelsim
+w1223466908
+Ftxblock_tb.v
+L0 2
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vuart
+IS=Z:76TQLX7lDI@gWohFI2
+VfT?ET3_ImDjS`833^j_f<2
+dF:\ic_project\function_simulation\modelsim
+w1223466610
+FF:/ic_project/function_simulation/modelsim/uart.v
+L0 2
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000
+vuart_tb
+IHIk8D];A^A]ealNPn^Xe@0
+VZzYO6HjR<]<2_bm?EhR?51
+dF:\ic_project\function_simulation\modelsim
+w1223466672
+Fuart_tb.v
+L0 3
+OE;L;6.0d;29
+r1
+31
+o-work work
+tGenerateLoopIterationMax 100000

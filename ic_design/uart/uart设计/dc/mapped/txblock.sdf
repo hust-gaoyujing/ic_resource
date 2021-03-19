@@ -1,0 +1,27 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "txblock")
+(DATE "Fri Dec  5 06:08:48 2008")
+(VENDOR "tcb773pbc")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "V-2004.06-SP2")
+(DIVIDER /)
+(VOLTAGE 3.60:3.60:3.60)
+(PROCESS "BCCOM")
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "txblock")
+  (INSTANCE)
+  (TIMINGCHECK
+    (PATHCONSTRAINT clk_counter_reg\[3\]/CP clk_counter_reg\[3\]/Q clk_tx (49958.000:49958.000:49958.000) )
+
+$DESIGN_HIERARCHY txblock  6702.50 U59 U58 U57 para_data_copy_reg[9]
+@ tx_end_flag_reg tx_counter_reg[1] tx_counter_reg[2] tx_counter_reg[0]
+@ tx_counter_reg[3] te_flag_reg clk_counter_reg[2] clk_counter_reg[1]
+@ clk_counter_reg[0] U56 U55 U54 U53 U52 U51 U50 U49 U48 U47 U46 U45 U44 U43 U42
+@ U41 U40 U39 U38 U37 U36 U35 para_data_copy1_reg[8] U34 U33 U32 U31 U30
+@ clk_counter_reg[3] rst_flag_reg U23 U18
+  )
+)
+)

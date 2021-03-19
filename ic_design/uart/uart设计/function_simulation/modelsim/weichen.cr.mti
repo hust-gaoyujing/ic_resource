@@ -1,0 +1,29 @@
+F:/ic_project/function_simulation/modelsim/mul_2bit.vhd {1 {vcom -work work -2002 -explicit F:/ic_project/function_simulation/modelsim/mul_2bit.vhd
+Model Technology ModelSim SE vcom 6.0d Compiler 2005.04 Apr 25 2005
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mul_2bit
+-- Compiling architecture structural of mul_2bit
+
+} {} {}} F:/ic_project/function_simulation/modelsim/halfadder.vhd {1 {vcom -work work -2002 -explicit F:/ic_project/function_simulation/modelsim/halfadder.vhd
+Model Technology ModelSim SE vcom 6.0d Compiler 2005.04 Apr 25 2005
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity halfadder
+-- Compiling architecture rtl of halfadder
+
+} {} {}} F:/ic_project/function_simulation/modelsim/fulladder.vhd {1 {vcom -work work -2002 -explicit F:/ic_project/function_simulation/modelsim/fulladder.vhd
+Model Technology ModelSim SE vcom 6.0d Compiler 2005.04 Apr 25 2005
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture rtl of fulladder
+
+} {} {}} F:/ic_project/function_simulation/modelsim/and2.vhd {1 {vcom -work work -2002 -explicit F:/ic_project/function_simulation/modelsim/and2.vhd
+Model Technology ModelSim SE vcom 6.0d Compiler 2005.04 Apr 25 2005
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity and2
+-- Compiling architecture rtl of and2
+
+} {} {}}

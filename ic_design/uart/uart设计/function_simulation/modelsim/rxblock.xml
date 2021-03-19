@@ -1,0 +1,11 @@
+<interfaceDefinition version='1.1' language='verilog' kind='module' name='rxblock'>
+    <portList>
+
+      <port name='clk16' direction='input' type='' />
+      <port name='serial_data_in' direction='input' type='' />
+      <port name='rst_n' direction='input' type='' />
+      <port name='para_data_out' direction='output' type='[7:0]' />
+      <port name='receive_flag' direction='output' type='' />
+
+    </portList>
+</interfaceDefinition>

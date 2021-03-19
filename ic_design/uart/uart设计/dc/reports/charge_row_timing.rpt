@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dll_syn
+Version: V-2004.06-SP2
+Date   : Fri Dec  5 11:09:40 2008
+****************************************
+
+Operating Conditions: BCCOM   Library: tcb773pbc
+Wire Load Model Mode: top
+
+  Startpoint: duty[2] (input port clocked by clock)
+  Endpoint: clk_out (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dll_syn            TSMC16K_Conservative  tcb773pbc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clock (rise edge)                  0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    40.00      40.00 f
+  duty[2] (in)                             0.00      40.00 f
+  U72/ZN (NR2D0)                           0.16      40.16 r
+  U64/ZN (AOI21D0)                         0.22      40.38 f
+  U63/ZN (OAI21D0)                         0.16      40.54 r
+  U62/ZN (INV0)                            0.18      40.73 f
+  U61/ZN (INV3)                            0.68      41.41 r
+  clk_out (out)                            0.00      41.41 r
+  data arrival time                                  41.41
+
+  clock clock (rise edge)              50000.00   50000.00
+  clock network delay (ideal)              0.00   50000.00
+  clock uncertainty                       -2.00   49998.00
+  output external delay                  -40.00   49958.00
+  data required time                              49958.00
+  -----------------------------------------------------------
+  data required time                              49958.00
+  data arrival time                                 -41.41
+  -----------------------------------------------------------
+  slack (MET)                                     49916.59
+
+
+1

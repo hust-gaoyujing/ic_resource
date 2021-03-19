@@ -1,0 +1,32 @@
+#set verilogout_show_unconnected_pns true
+
+#foreach_in_collection design [ get_designs "*"] {
+#    current_design $design
+#    set_fix_multiple_port_nets -all -buffer_constants
+# }
+#current_design top_pad
+#set_fix_multiple_port_nets -all -feedthroughs
+#set_fix_multiple_port_nets -all -buffer_constants
+#set_isolate_ports [all_outputs]
+
+set hdlout_internal_busses true
+set bus_inference_style "%s\[%d\]"
+ 
+set verilogout_no_tri true
+set write_name_nets_same_as_ports true
+set verilogout_single_bit false
+
+set bus_naming_style "%s\[%d\]"
+set verilogout_unconnected_prefix  "SYNOPSYS_UNCONNECTED_"
+
+define_name_rules valid_name -equal_ports_nets \
+ -check_bus_indexing \
+ -replacement_char "x" \
+ -flatten_multi_dimension_busses \
+ -restricted "~!@#$%^&*()-\\+" \
+ -case_insensitive \
+ -first_restricted "_0-9" \
+ -last_restricted "_" \
+ -map {{{"/","_"} {"\*cell\*", "CELL"} {"-*return", "RET"}}}
+
+#change_names -rules valid_name  -hierarchy

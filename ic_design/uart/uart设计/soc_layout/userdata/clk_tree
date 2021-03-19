@@ -1,0 +1,516 @@
+#########################################
+# clock root: clk
+# route selection: preRoute
+#########################################
+
+*******************
+Instance Name              : clk__L1_I0
+Input                      : I
+Output                     : Z
+Cell                       : BUF6
+Level                      : 1
+Input Delay                : [0.1  0.1]
+Input Tran.                : [6  6]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 5.7
+Downstream Rise Delay      : [345.2  350.9]
+Downstream Fall Delay      : [361.8  367.5]
+Downstream Rise Skew       : 5.7
+Downstream Fall Skew       : 5.7
+*******************
+
+*******************
+Instance Name              : clk__L2_I0
+Input                      : I
+Output                     : Z
+Cell                       : BUF6
+Level                      : 2
+Input Delay                : [126.3  130.7]
+Input Tran.                : [50.4  53.5]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 5.7
+Downstream Rise Delay      : [345.2  350.9]
+Downstream Fall Delay      : [361.8  367.5]
+Downstream Rise Skew       : 5.7
+Downstream Fall Skew       : 5.7
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[15]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.6  367.2]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.6  350.6]
+Downstream Fall Delay      : [367.2  367.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[12]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.5  367.1]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.5  350.5]
+Downstream Fall Delay      : [367.1  367.1]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[11]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.4  367]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.4  350.4]
+Downstream Fall Delay      : [367  367]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[8]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.3  366.9]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.3  350.3]
+Downstream Fall Delay      : [366.9  366.9]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[7]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.1  366.7]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.1  350.1]
+Downstream Fall Delay      : [366.7  366.7]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[5]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [349.8  366.4]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.8  349.8]
+Downstream Fall Delay      : [366.4  366.4]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[13]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.8  367.4]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.8  350.8]
+Downstream Fall Delay      : [367.4  367.4]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[1]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [349.6  366.2]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.6  349.6]
+Downstream Fall Delay      : [366.2  366.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/out_clk_reg
+Input                      : CP
+Cell                       : DFCN2Q
+Level                      : 3
+Input Delay                : [349.5  366.1]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.5  349.5]
+Downstream Fall Delay      : [366.1  366.1]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[10]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.6  367.2]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.6  350.6]
+Downstream Fall Delay      : [367.2  367.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[2]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [349.5  366.1]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.5  349.5]
+Downstream Fall Delay      : [366.1  366.1]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[3]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [349.2  365.8]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.2  349.2]
+Downstream Fall Delay      : [365.8  365.8]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[4]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [349.3  365.9]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.3  349.3]
+Downstream Fall Delay      : [365.9  365.9]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[1]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [348.8  365.4]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [348.8  348.8]
+Downstream Fall Delay      : [365.4  365.4]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[0]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [349.6  366.2]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [349.6  349.6]
+Downstream Fall Delay      : [366.2  366.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[6]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.8  364.4]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.8  347.8]
+Downstream Fall Delay      : [364.4  364.4]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[14]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [350.9  367.5]
+Input Tran.                : [180.7  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [350.9  350.9]
+Downstream Fall Delay      : [367.5  367.5]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/divisor_copy_reg[9]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [346.6  363.2]
+Input Tran.                : [180.8  163.3]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [346.6  346.6]
+Downstream Fall Delay      : [363.2  363.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[14]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.6  364.2]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.6  347.6]
+Downstream Fall Delay      : [364.2  364.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[15]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.6  364.2]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.6  347.6]
+Downstream Fall Delay      : [364.2  364.2]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[3]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [345.2  361.8]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [345.2  345.2]
+Downstream Fall Delay      : [361.8  361.8]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[10]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.4  364]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.4  347.4]
+Downstream Fall Delay      : [364  364]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[13]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.4  364]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.4  347.4]
+Downstream Fall Delay      : [364  364]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[4]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.1  363.7]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.1  347.1]
+Downstream Fall Delay      : [363.7  363.7]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[8]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [346.7  363.3]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [346.7  346.7]
+Downstream Fall Delay      : [363.3  363.3]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[11]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.2  363.8]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.2  347.2]
+Downstream Fall Delay      : [363.8  363.8]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[2]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [346.5  363.1]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [346.5  346.5]
+Downstream Fall Delay      : [363.1  363.1]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[6]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [346.5  363.1]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [346.5  346.5]
+Downstream Fall Delay      : [363.1  363.1]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[12]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.2  363.8]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.2  347.2]
+Downstream Fall Delay      : [363.8  363.8]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[7]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [346.7  363.3]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [346.7  346.7]
+Downstream Fall Delay      : [363.3  363.3]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[5]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [346.7  363.3]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [346.7  346.7]
+Downstream Fall Delay      : [363.3  363.3]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
+
+*******************
+Instance Name              : u1/counter_reg[9]
+Input                      : CP
+Cell                       : DFCN1Q
+Level                      : 3
+Input Delay                : [347.3  363.9]
+Input Tran.                : [180.7  163.2]
+Downstream Trig. Edge      : R
+Downstream Trig. Edge Skew : 0
+Downstream Rise Delay      : [347.3  347.3]
+Downstream Fall Delay      : [363.9  363.9]
+Downstream Rise Skew       : 0
+Downstream Fall Skew       : 0
+*******************
